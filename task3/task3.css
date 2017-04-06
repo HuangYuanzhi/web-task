@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #68cdd5;
+    margin:0 auto;
+    font: 0.8rem "微软雅黑";
+    color: #ffffff;
+}
+.back-button{
+    height: 2rem;
+    margin: 2rem;
+    background: url(task3-assets/back.png) no-repeat;
+    -webkit-background-size: 2rem;
+    background-size: 2rem;
+}
+h1{
+    margin-top: 6rem;
+    text-align: center;
+}
+h1 img{
+    width: 90px;
+    height: 35px;
+}
+.content{
+    margin:8rem 2rem;
+}
+.left{
+    float: left;
+    margin-left: 2rem;
+    text-align: center;
+}
+.left .pic1{
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: url("task3-assets/group-logo.png") no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+}
+.right{
+    float: right;
+    margin-right: 2rem;
+    text-align: center;
+}
+.right .pic2{
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: url("task3-assets/ppt-logo.png") no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+}
