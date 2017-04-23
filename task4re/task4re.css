@@ -1,0 +1,86 @@
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,button,input,textarea,th,td{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: #eff0f4;
+    color: #ffffff;
+}
+header{
+    background: #5fc0cd;
+    height: 39px;
+    line-height: 39px;
+    display: flex;
+    justify-content: space-between;
+
+}
+header a{
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #ffffff;
+
+}
+header h2{
+    font-weight:normal;
+}
+
+
+.input .account{
+    display: flex;
+    flex-flow:row wrap;
+    height: 42px;
+    margin-top: 7px;
+    background: #ffffff;
+}
+.input .account span{
+    width: 51px;
+    height: 42px;
+}
+
+.input .account input{
+    flex:auto;
+    align-self: center;
+    outline:none;
+    border:none;
+    height: 22px;
+    border-left: 2px solid #eff0f4;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+
+.input .account .iphone{
+    background: url("task4re-assets/iphone.png") no-repeat center;
+    background-size: 23%;
+}
+.input .account .lock{
+    background: url("task4re-assets/locked-2.png") no-repeat center;
+    background-size: 23%;
+}
+
+.login button{
+    margin-top: 30px;
+    height: 44px;
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    background: #5fc0cd;
+    border:none;
+    outline:none;
+}
+.forget a{
+    text-decoration: none;
+    display: block;
+    float: right;
+    padding-right: 13px;
+    padding-top: 9px;
+    font-size: 14px;
+    color: #5fc0cd;
+}

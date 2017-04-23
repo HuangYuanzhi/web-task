@@ -1,0 +1,112 @@
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,button,input,textarea,th,td{
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 625%;
+    font-family: "Microsoft YaHei UI";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration:none;
+    font-size:0.32rem ;
+    color: #ffffff;
+}
+a:hover{
+    text-decoration:none;}
+body{
+    font-size:0.36rem;
+    color: #eaedee;
+    background-color: #eaedee;
+}
+.header{
+    position: relative;
+    background-color: #5ac0ce;
+    height: 0.88rem;
+    width: 100%;
+    line-height: 0.88rem;
+    margin-bottom: 0.16rem;
+
+}
+.header .left{
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    font: 0.32rem 'Microsoft YaHei';
+}
+.header .center{
+    position: absolute;
+    color: #ffffff;;
+    top:0;
+    left:50%;
+    margin-left: -0.36rem;
+}
+.header .center h2{
+    font-size:0.36rem;
+    font-weight:normal;
+}
+.header .right{
+    float: right;
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+    font: 0.32rem 'Microsoft YaHei';
+}
+.content .account{
+    height: 1rem;
+    background-color: #ffffff;
+    margin-bottom: 0.14rem;
+    overflow: hidden;
+
+}
+.content .account img {
+    float: left;
+    padding:0.3rem 0.43rem;
+}
+.content .account span{
+    float: left;
+    padding:0.24rem 0.33rem 0.24rem 0;
+    height: 0.51rem;
+    line-height:0.51rem;
+}
+.content .account input{
+    float: left;
+    font: 0.32rem 'Microsoft YaHei';
+    color: #000000;
+    margin-top:0.24rem;
+    height: 0.51rem;
+    width:70%;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+
+.content .login{
+    height: 1rem;
+    background-color: #5ac0ce;
+    text-align: center;
+    margin-top:0.69rem;
+}
+.content .login input{
+    font-size:0.36rem;
+    color: #ffffff;
+    background-color: #5ac0ce;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin: 0.06rem auto;
+    border: none;
+    outline:none;
+
+}
+
+.footer{
+    float: right;
+    margin-top: 0.2rem;
+    margin-right:0.3rem;
+}
+.footer a{
+    color: #5ac0ce;
+}
