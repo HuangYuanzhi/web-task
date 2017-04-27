@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>form表单</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <form action="" class="form-inline">
+        <div class="form-group">
+            <label for="email">邮件</label>
+            <input type="email" id="email" class="form-control" placeholder="email">
+        </div>
+        <div class="form-group">
+            <label for="psd" class="sr-only">密码</label>
+            <input type="password"  id="psd" class="form-control" placeholder="password">
+        </div>
+        <div class="form-group">
+            <label for="file-input">file input</label>
+            <input type="file" class="form-control" id="file-input">
+            <p class="help-block">请选择文件</p>
+        </div>
+        <div class="form-group">
+            <label class="sr-only">金额</label>
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" class="form-control" placeholder="金额">
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <hr>
+    <div class="container">
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="" class="col-md-3 control-label">Email</label>
+                <div class="col-md-9">
+                    <input type="email" class="form-control">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr>
+<hr>
+<form class="form-inline">
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputSuccess4">Input with success</label>
+        <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span id="inputSuccess4Status" class="sr-only">(success)</span>
+    </div>
+</form>
+<form class="form-inline">
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
+        <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+        </div>
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+    </div>
+</form>
+</body>
+</html>

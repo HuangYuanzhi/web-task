@@ -1,0 +1,14 @@
+.header{
+    background: #5fc0cd;
+}
+.navbar-btn{
+    text-align: center;
+    position: relative;
+}
+.btn-group{
+    position: absolute;
+    left: auto;
+}
+.map-marker{
+    float: right;
+}
