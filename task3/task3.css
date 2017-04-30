@@ -4,50 +4,55 @@
 }
 html{
     background-color: #68cdd5;
-    margin:0 auto;
-    font: 0.8rem "微软雅黑";
+    font-size: 625%;
     color: #ffffff;
 }
 .back-button{
-    height: 2rem;
-    margin: 2rem;
+    width: .27rem;
+    height: .27rem;
+    margin: 0.1rem 0.18rem;
     background: url(task3-assets/back.png) no-repeat;
-    -webkit-background-size: 2rem;
-    background-size: 2rem;
+    -webkit-background-size: .27rem;
+    background-size: .27rem;
 }
-h1{
-    margin-top: 6rem;
-    text-align: center;
+.logo{
+    padding-top: .2rem;
 }
-h1 img{
-    width: 90px;
-    height: 35px;
+.logo .ppt{
+    background: url(task3-assets/head-logo.png) no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+    width: .9rem;
+    height: .35rem;
+    margin: 0 auto;
 }
 .content{
-    margin:8rem 2rem;
+    font-size:.15rem;
+    margin:.8rem .2rem;
+}
+.button{
+    font-size:.12rem;
+    text-align: center;
 }
 .left{
     float: left;
-    margin-left: 2rem;
-    text-align: center;
+    margin-left: .2rem;
+}
+.right{
+    float: right;
+    margin-right: .2rem;
+}
+.pic{
+    width: .42rem;
+    height: .42rem;
+    margin: 0 auto;
 }
 .left .pic1{
-    width: 42px;
-    height: 42px;
-    margin: 0 auto;
     background: url("task3-assets/group-logo.png") no-repeat;
     -webkit-background-size:100%;
     background-size:100%;
 }
-.right{
-    float: right;
-    margin-right: 2rem;
-    text-align: center;
-}
 .right .pic2{
-    width: 42px;
-    height: 42px;
-    margin: 0 auto;
     background: url("task3-assets/ppt-logo.png") no-repeat;
     -webkit-background-size:100%;
     background-size:100%;
