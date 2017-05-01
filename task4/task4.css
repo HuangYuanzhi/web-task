@@ -5,107 +5,114 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,button,inp
 }
 html {
     font-size: 625%;
-    font-family: "Microsoft YaHei UI";
 }
-html,body{
-    height: 100%;
-    width: 100%;
-}
-a{
-    text-decoration:none;
-    font-size:0.32rem ;
-    color: #ffffff;
-}
-a:hover{
-    text-decoration:none;}
 body{
-    font-size:0.36rem;
-    color: #eaedee;
+    font-size:0.16rem;
+    color: #e9eced;
     background-color: #eaedee;
 }
 .header{
-    position: relative;
+    position: fixed;
     background-color: #5ac0ce;
-    height: 0.88rem;
     width: 100%;
-    line-height: 0.88rem;
-    margin-bottom: 0.16rem;
+    height: .44rem;
+    line-height: .44rem;
+    margin-bottom: .08rem;
 
+}
+.header a{
+    text-decoration:none;
+    font-size:.16rem ;
+    color: #ffffff;
+}
+.header a:hover{
+    text-decoration:none;
 }
 .header .left{
     float: left;
-    margin-left: 0.3rem;
-    margin-top: 0.3rem;
-    font: 0.32rem 'Microsoft YaHei';
+    margin-left: .15rem;
+
 }
+
 .header .center{
     position: absolute;
     color: #ffffff;;
     top:0;
     left:50%;
-    margin-left: -0.36rem;
+    margin-left: -0.18rem;
 }
-.header .center h2{
-    font-size:0.36rem;
+.header .center h3{
+    font-size:.18rem;
     font-weight:normal;
 }
 .header .right{
     float: right;
-    margin-right: 0.3rem;
-    margin-top: 0.3rem;
-    font: 0.32rem 'Microsoft YaHei';
+    margin-right: .15rem;
 }
-.content .account{
-    height: 1rem;
+.content{
+    padding-top: .44rem;
+}
+.content .form{
+    height: .5rem;
     background-color: #ffffff;
-    margin-bottom: 0.14rem;
+    margin-bottom: .07rem;
     overflow: hidden;
 
 }
-.content .account img {
+.content .form .img {
     float: left;
-    padding:0.3rem 0.43rem;
+    width: .14rem;
+    height: .21rem;
+    padding:.15rem .22rem;
 }
-.content .account span{
-    float: left;
-    padding:0.24rem 0.33rem 0.24rem 0;
-    height: 0.51rem;
-    line-height:0.51rem;
+.content .form .img img{
+    max-height:100%;
+    max-width:100%;
 }
-.content .account input{
+.content .form span{
     float: left;
-    font: 0.32rem 'Microsoft YaHei';
+    font-size: 0.16rem;
+    height: .5rem;
+    line-height:.5rem;
+}
+.content .form .wrapper{
+    color: #e9eced;
+    overflow: hidden;
+}
+.content .form .wrapper input{
+    font-size: 0.16rem;
     color: #000000;
-    margin-top:0.24rem;
-    height: 0.51rem;
-    width:70%;
+    margin-top:0.12rem;
+    padding-left:0.15rem;
+    height: 0.26rem;
+    line-height:0.26rem;
+    width: 100%;
     border:none;
     outline:none;
     cursor: pointer;
 }
-
-.content .login{
-    height: 1rem;
-    background-color: #5ac0ce;
-    text-align: center;
-    margin-top:0.69rem;
+/*修改placeholder颜色*/
+.content .form .wrapper input::-webkit-input-placeholder{
+    color:#e1e5e7;
 }
-.content .login input{
-    font-size:0.36rem;
+
+
+.content .login button{
+    margin-top:.35rem;
+    font-size:0.18rem;
     color: #ffffff;
     background-color: #5ac0ce;
-    height: 0.88rem;
-    line-height: 0.88rem;
-    margin: 0.06rem auto;
+    height: 0.5rem;
+    width:100%;
+    line-height: 0.5rem;
     border: none;
     outline:none;
-
 }
 
 .footer{
     float: right;
-    margin-top: 0.2rem;
-    margin-right:0.3rem;
+    margin-top: 0.1rem;
+    margin-right:0.15rem;
 }
 .footer a{
     color: #5ac0ce;
