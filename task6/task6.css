@@ -1,14 +1,74 @@
-.header{
-    background: #5fc0cd;
+
+html{
+    font-size: 625%;
 }
-.navbar-btn{
-    text-align: center;
+body{
+    background: #ffffff;
+}
+
+header{
     position: relative;
+    background: #5fc0cd;
+    height: .44rem;
+    text-align: center;
 }
-.btn-group{
-    position: absolute;
-    left: auto;
-}
-.map-marker{
+header .map{
     float: right;
+    width: .22rem;
+    height: .19rem;
+    margin-right: .15rem;
+    margin-top: .1rem;
+    background: url("img/sprite.png") no-repeat 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+header .header-btn{
+    position: absolute;
+    display: flex;
+    background: #55a8b3;
+    font-size: .17rem;
+    color: #ffffff;
+    top: 0;
+    left: 50%;
+    margin-left: -.72rem;
+    margin-top:.05rem;
+    height: .35rem;
+    width: 1.44rem;
+    border-radius: .06rem;
+    line-height: .35rem;
+}
+header .employers{
+    height:100%;
+    width:50%;
+    color: #ffffff;
+    border-radius: .06rem;
+
+}
+header .employees{
+    height:100%;
+    width:50%;
+    background: #ffffff;
+    color: #55a8b3;
+    border-radius: .06rem;
+
+}
+content .content-nav{
+    border-bottom: 1px solid #e0e0e0;
+}
+content .content-nav .no-padding{
+    padding: 0;
+}
+.no-border{
+    border: none;
+}
+.btn{
+    width: 100%;
+    text-align: left;
+
+}
+.border-right{
+    border-right: 1px solid #e0e0e0;
+}
+.dropdown{
+    border: none;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +10,59 @@
     <link rel="stylesheet" href="task6.css">
 </head>
 <body>
-<div class="header">
-    <nav class="navbar">
-        <div class="">
-            <div class="navbar-header ">
-                <div class="navbar-btn ">
-                    <div class="btn-group ">
-                        <button class="btn " role="button">找雇主</button>
-                        <button class="btn " role="button">找护工</button>
-                    </div>
-                    <div class="btn map-marker">
-                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                    </div>
+<header class="header">
+    <div class="map"></div>
+    <div class="header-btn">
+        <div class="employers">找雇主</div>
+        <div class="employees">找护工</div>
+    </div>
+</header>
+<content>
+    <div class="content-nav">
+        <div class="container no-padding">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4 border-right">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle no-border" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span >所在地</span><span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header"><a href="#">北京</a></li>
+                            <li class="dropdown-header"><a href="#">上海</a></li>
+                            <li class="dropdown-header"><a href="#">广州</a></li>
+                        </ul>
                     </div>
                 </div>
-
+                <div class="col-md-4 col-sm-4 col-xs-4 border-right">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle no-border" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">食宿<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header"><a href="#">包吃包住</a></li>
+                            <li class="dropdown-header"><a href="#">包吃不包住</a></li>
+                            <li class="dropdown-header"><a href="#">不包吃不包住</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 ">
+                    <div class="dropdown ">
+                        <button class="btn btn-default dropdown-toggle no-border" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">病人情况<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header"><a href="#">一级</a></li>
+                            <li class="dropdown-header"><a href="#">二级</a></li>
+                            <li class="dropdown-header"><a href="#">三级</a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
-    </nav>
-</div>
+
+
+    </div>
+    <div class="content-list">
+
+    </div>
+</content>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
