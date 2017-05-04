@@ -1,13 +1,16 @@
 
 html{
     font-size: 625%;
+
 }
 body{
     background: #ffffff;
+    margin: 0 auto;
 }
 
 header{
     position: relative;
+    width:100%;
     background: #5fc0cd;
     height: .44rem;
     text-align: center;
@@ -52,23 +55,94 @@ header .employees{
     border-radius: .06rem;
 
 }
-content .content-nav{
-    border-bottom: 1px solid #e0e0e0;
+content nav .flex{
+    display: flex;
+    width:100%;
+    justify-content:space-between;
 }
-content .content-nav .no-padding{
+content nav .flex>li{
+    text-align: center;
+}
+
+content .dropdown{
     padding: 0;
 }
-.no-border{
-    border: none;
+
+content .content-list>.row{
+    border-bottom: 1px solid #dadcdd;
+    padding-top: .15rem;
+    padding-left: .15rem;
 }
-.btn{
-    width: 100%;
-    text-align: left;
+content .content-list>.row:first-of-type{
+    padding-top: 0;
+}
+
+content .content-list .list-date{
+    color: #999999;
+}
+content .content-list .list-icon{
+    color: #dadcdd;
+}
+content .content-list .list-price{
+    color: #ff0000;
+}
+
+content .content-list .date{
+    display: inline-block;
+    padding-left: .34rem;
 
 }
-.border-right{
-    border-right: 1px solid #e0e0e0;
+
+content .content-list .left-icon{
+    display: inline-block;
+    float: right;
+    padding-right: .2rem;
+
 }
-.dropdown{
-    border: none;
+content .content-list .price{
+    display: inline-block;
+    float: right;
+    padding-right: .15rem;
+}
+
+footer .row>div {
+    text-align: center;
+}
+footer .row a{
+    display: inline-block;
+    margin:0 auto;
+}
+
+footer .house{
+    margin:0 auto;
+    width: .23rem;
+    height: .20rem;
+    background: url("img/sprite.png") no-repeat 0 -.38rem;
+    -webkit-background-size:100%;
+    background-size:100%;
+}
+footer .write-bg{
+    width: .47rem;
+    height: .47rem;
+    background: #55a8b3;
+    border-radius: .235rem;
+    overflow: hidden;
+}
+footer .write{
+
+    margin: 0.135rem auto;
+    width: .2rem;
+    height: .2rem;
+    background: url("img/sprite.png") no-repeat 0 -.21rem;
+    -webkit-background-size:118%;
+    background-size:118%;
+
+}
+footer .user-info{
+    margin:0 auto;
+    width: .23rem;
+    height: .20rem;
+    background: url("img/sprite.png") no-repeat 0 -.58rem;
+    /*-webkit-background-size:cover;*/
+    background-size:100%;
 }

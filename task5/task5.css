@@ -7,13 +7,12 @@ body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,button,inp
 }
 @font-face {
     font-family: "icomoon";
-    src: url( "fonts/icomoon.woff") format("woff"),url( "fonts/icomoon.eot") format("embedded-opentype"),url( "fonts/icomoon.ttf") format("truetype"),
-    url( "fonts/icomoon.svg") format("svg");
+    src: url( "fonts/icomoon.woff") format("woff"),url( "fonts/icomoon.eot") format("embedded-opentype"),url( "fonts/icomoon.ttf") format("truetype"),url( "fonts/icomoon.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 html{
-    font-size: 10px;
+    font-size: 625%;
 }
 body{
     background: #ffffff;
@@ -21,140 +20,139 @@ body{
 header{
     position: fixed;
     background: #5fc0cd;
-    height: 38px;
+    height: .4rem;
+    line-height:.4rem;
+    font-size: .18rem;
     width: 100%;
     color: #ffffff;
 }
-
 
 header a{
     display: block;
     position: absolute;
-    width: 40px;
-    height: 38px;
+    width: .3rem;
+    height: .4rem;
     /*icon字体*/
     font-family: "icomoon";
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
     color: #ffffff;
-    padding-left: 13px;
-    line-height:38px;
+    padding-left: .1rem;
     text-decoration: none;
 
-    /*background: url("img/re-btn.png") no-repeat center ;*/
-    /*background-size: 25%;*/
 }
 header h2{
     text-align: center;
-    font-size: 16px;
-    line-height: 38px;
+    font-size: .18rem;
 }
 .nav{
-    padding-top: 38px;
-    height: 145px;
-    width: 100%;
-    background: url("img/nav-bg.png") no-repeat 0 -8px;
-    background-size: 100%;
+    padding-top: .4rem;
+    height: 1.64rem;
+    background: url("img/nav-bg.png") no-repeat 0 -5px;
+    background-size: cover;
     background-origin: content-box;
     color: #ffffff;
 }
 .opacity{
     display: flex;
     align-items: center;
-    height: 145px;
-    width: 100%;
+    height: 1.64rem;
     background: rgba(0,0,0,0.2);
 }
 .nav .photo{
-    width: 76px;
-    height: 76px;
-    border-radius: 38px;
-    margin-left: 13px;
+    flex:none;
+    width: .85rem;
+    height: .85rem;
+    border-radius: .425rem;
+    margin-left: .15rem;
     background: url("img/photo.png") no-repeat center;
     background-size: 100%;
 }
-.nav .info div{
-    margin-left: 18px;
+
+.nav .info div:first-of-type{
+    margin-left: .20rem;
+    line-height: .18rem;
+    font-size: .12rem;
+
 }
 .nav .info .name{
-    font-size: 16px;
+    font-size: .18rem;
 }
 .nav .info .age{
-    font-size: 13px;
+    padding-left:.15rem;
+    font-size: .14rem;
 }
-.nav .info div:last-child{
-    margin-top: 11px;
+.nav .info div:last-of-type{
+    margin-top: .12rem;
+    margin-left: .20rem;
+    line-height: .12rem;
+    font-size: .12rem;
 }
 .nav .info div .position-logo{
-    /*display: inline-block;*/
-    /*width: 8px;*/
-    /*height: 10px;*/
 
     /*icon字体*/
     font-family: "icomoon";
     font-weight: normal;
     font-style: normal;
-    font-size: 14px;
+    font-size: .12rem;
     color: #5fc0cd;
 
-
-    /*background: url("img/position-logo.png") no-repeat center;*/
-    /*background-size: 100%;*/
 }
 .nav .info .address{
-    font-size: 12px;
+    padding-left: .07rem;
+    font-size: .12rem;
 }
 .content{
-    font-size: 14px;
+    font-size: .16rem;
     padding-bottom: 80px;
 }
 .content h3{
     display: block;
-    font-size: 14px;
+    font-size: .16rem;
     border-left:2px solid #5fc0cd;
-    margin-top: 9px;
-    margin-left: 13px;
-    margin-bottom: 15px;
-    padding-left: 13px;
+    margin: .15rem;
+    padding-left: .15rem;
     font-weight: bold;
 }
-.content .demand,.content dl {
-    padding-left: 28px;
+.content .demand{
+    padding-left: .3rem;
     border-top:1px solid #e1e5e7;
 }
 .content .demand{
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: .18rem;
+    padding-bottom: .18rem;
 }
-.content .live-eat div{
-    height: 19px;
-    padding-left: 15px;
-    background: url("img/star.png") no-repeat 0 3px;
-    background-size: 13px;
+/*星星字体图标*/
+.content .live-eat div span{
+    font-family: "icomoon";
+    font-weight: normal;
+    font-style: normal;
+    color: #ff0000;
+    font-size: .14rem;
 }
+
 .content .demand .live{
     padding-right: 9px;
     border-right:1px solid #e1e5e7;
     margin-right: 9px;
 }
-.content .demand .black{
+.content .demand .demand-list{
     color: #999999;
-    height: 19px;
-    width: 56px;
-    padding-right: 9px;
+    padding-right: .13rem;
     border-right:1px solid #e1e5e7;
-    margin-right: 9px;
+    margin-right: .13rem;
+    align-self: center;
 }
 .content .demand:last-of-type{
     border-bottom: 1px solid #e1e5e7;
 }
-.center{
-    align-self: center;
+.content .demand .price{
+    color: #ff0000;
 }
-.s12{
+.content .demand .self-intro{
     flex:1;
+    font-size:.14rem;
 }
 footer{
     position: fixed;
@@ -163,28 +161,28 @@ footer{
     bottom: 0;
     display: flex;
     justify-content:space-between;
-    padding:10px 18px 18px 18px;
+    padding:.1rem .2rem .2rem .2rem;
     background: #ffffff;
 }
 footer button:first-child{
     flex:1;
-    height: 37px;
-    font-size: 15px;
+    height: .4rem;
+    font-size: .17rem;
     color: #5fc0cd;
-    line-height: 37px;
+    line-height: .4rem;
     border: 2px solid #5fc0cd;
-    border-radius: 6px;
+    border-radius: .06rem;
     background: #ffffff;
-    margin-right: 5px;
+    margin-right: .06rem;
  }
 footer button:last-child{
     flex:1;
-    height: 37px;
-    font-size: 15px;
-    line-height: 37px;
+    height: .4rem;
+    font-size: .17rem;
+    line-height: .4rem;
     color: #ffffff;
     border:none;
-    border-radius: 6px;
+    border-radius: .06rem;
     background: #5fc0cd;
-    margin-left: 5px;
+    margin-left: .06rem;
 }
