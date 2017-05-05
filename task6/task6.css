@@ -5,17 +5,21 @@ html{
 }
 body{
     background: #ffffff;
-    margin: 0 auto;
+
 }
 
-header{
-    position: relative;
-    width:100%;
+.header{
+    z-index:999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    /*width:100%;*/
     background: #5fc0cd;
     height: .44rem;
     text-align: center;
 }
-header .map{
+.header .map{
     float: right;
     width: .22rem;
     height: .19rem;
@@ -25,7 +29,7 @@ header .map{
     -webkit-background-size: cover;
     background-size: cover;
 }
-header .header-btn{
+.header .header-btn{
     position: absolute;
     display: flex;
     background: #55a8b3;
@@ -40,14 +44,14 @@ header .header-btn{
     border-radius: .06rem;
     line-height: .35rem;
 }
-header .employers{
+.header .employers{
     height:100%;
     width:50%;
     color: #ffffff;
     border-radius: .06rem;
 
 }
-header .employees{
+.header .employees{
     height:100%;
     width:50%;
     background: #ffffff;
@@ -55,54 +59,69 @@ header .employees{
     border-radius: .06rem;
 
 }
-content nav .flex{
-    display: flex;
+.content .btn-group{
+    border-bottom:1px solid #dadcdd;
     width:100%;
-    justify-content:space-between;
 }
-content nav .flex>li{
-    text-align: center;
+.content .btn-group>.btn:nth-of-type(2){
+    border-left:1px solid #dadcdd;
+    border-right:1px solid #dadcdd;
+}
+.content .btn-group button{
+    border:none;
 }
 
-content .dropdown{
-    padding: 0;
-}
 
-content .content-list>.row{
+.content .content-list>.row{
     border-bottom: 1px solid #dadcdd;
     padding-top: .15rem;
     padding-left: .15rem;
 }
-content .content-list>.row:first-of-type{
+.content .content-list>.row:first-of-type{
     padding-top: 0;
 }
 
-content .content-list .list-date{
+.content .content-list .list-date{
     color: #999999;
 }
-content .content-list .list-icon{
+.content .content-list .list-icon{
     color: #dadcdd;
 }
-content .content-list .list-price{
+.content .content-list .list-price{
     color: #ff0000;
 }
 
-content .content-list .date{
+.content .content-list .date{
     display: inline-block;
     padding-left: .34rem;
 
 }
 
-content .content-list .left-icon{
+.content .content-list .left-icon{
     display: inline-block;
     float: right;
     padding-right: .2rem;
 
 }
-content .content-list .price{
+.content .content-list .price{
     display: inline-block;
     float: right;
     padding-right: .15rem;
+}
+
+
+.content{
+    padding-top: .44rem;
+    padding-bottom: .56rem;
+    overflow: hidden;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
 }
 
 footer .row>div {
@@ -111,6 +130,10 @@ footer .row>div {
 footer .row a{
     display: inline-block;
     margin:0 auto;
+    color: #5fc0cd;
+}
+footer .row>div:last-of-type a{
+    color: #999999;
 }
 
 footer .house{
@@ -124,7 +147,7 @@ footer .house{
 footer .write-bg{
     width: .47rem;
     height: .47rem;
-    background: #55a8b3;
+    background: #5fc0cd;
     border-radius: .235rem;
     overflow: hidden;
 }
