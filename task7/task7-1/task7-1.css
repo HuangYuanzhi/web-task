@@ -1,0 +1,125 @@
+html{
+    font-size:625%;
+}
+body{
+    background: #f0f0f0;
+}
+.header{
+    background: #29bde0;
+    height: .44rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+
+}
+.header .btn{
+    margin-top:.06rem;
+    color: #ffffff;
+    background: none;
+    border: none;
+    outline: none;
+}
+.header .btn:hover{
+    color: #ffffff;
+    background: none;
+    border: none;
+    outline: none;
+}
+.header .btn span{
+    font-size:.16rem;
+}
+
+.content{
+    padding-top: .44rem;
+}
+.content .history{
+
+    position: relative;
+    background: #ffffff;
+    color: #999999;
+    font-size:.17rem;
+    height: .58rem;
+    /*width: 2.84rem;*/
+    width: 88.75%;
+    border: 1px solid #c9c9c9;
+    margin: .12rem auto .05rem auto;
+    text-align: center;
+    line-height: .58rem;
+
+}
+.content .history a{
+    width: .4rem;
+    color: #f0f0f0;
+    font-size: .2rem;
+    position: absolute;
+    top:50%;
+    margin-top: -.29rem;
+    right: 0;
+}
+.game-desk{
+    position: relative;
+    border: 1px solid #c9c9c9;
+    background: #ffffff;
+    /*width: 2.84rem;*/
+    width: 88.75%;
+    margin: 0 auto;
+}
+.game-desk .game-title{
+
+    background: #ffffff;
+    color: #fbb435;
+    font-size:.16rem;
+    text-align: center;
+    height: .45rem;
+    line-height: .45rem;
+    border-bottom: 1px solid #fbb435;
+
+}
+
+
+.game-desk .game-version{
+    padding-top: .06rem;
+}
+.game-desk .game-version .version-type{
+
+    height: 1.06rem;
+    /*width: 2.31rem;*/
+    width: 81.34%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .12rem;
+    color: #787878;
+    line-height: .38rem;
+}
+.game-desk .game-version .version-type .version-title{
+    display: block;
+    height: .67rem;
+    border: 1px solid #a7e4f2;
+    background: #69d1e9;
+    color: #ffffff;
+    font-size: .16rem;
+    line-height: .67rem;
+}
+
+.game-desk .switch{
+    width: .64rem;
+    margin: 0 auto;
+}
+.game-desk .switch .switch-point{
+    margin: .02rem;
+    display: inline-block;
+    width: .09rem;
+    height: .09rem;
+    border-radius: .045rem;
+    background: #f0f0f0;
+}
+
+.game-desk .left-btn{
+    display: block;
+    position: absolute;
+    top:49%;
+    right: 0;
+    font-size: .28rem;
+    margin-top: -.14rem;
+    color: #fbb435;
+}
