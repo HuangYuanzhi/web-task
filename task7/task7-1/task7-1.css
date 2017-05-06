@@ -123,3 +123,8 @@ body{
     margin-top: -.14rem;
     color: #fbb435;
 }
+
+a:hover{
+    text-decoration: none;
+
+}
