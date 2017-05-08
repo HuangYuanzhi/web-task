@@ -7,8 +7,9 @@ body{
 .header{
     background: #29bde0;
     height: .44rem;
-    width: 100%;
     position: fixed;
+    left: 0;
+    right: 0;
     z-index: 999;
 
 }

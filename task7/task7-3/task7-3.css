@@ -2,7 +2,7 @@ html{
     font-size:625%;
 }
 body{
-
+    
 }
 a{
     text-decoration: none;
@@ -12,10 +12,12 @@ a:hover{
 }
 
 .header{
-    position: fixed;
+    position: absolute;
+    left:0;
+    right:0;
+
     z-index:999;
     height: .44rem;
-    width: 100%;
     background: #29bde0;
     color: #ffffff;
     font-size: .17rem;
@@ -56,7 +58,7 @@ a:hover{
 
 .content{
     padding-top: .54rem;
-
+    /*width: 100%;*/
     background: #29bde0;
 }
 .content .result{
@@ -67,7 +69,6 @@ a:hover{
 
 .content .result .result-img .win-img{
     width: 1.76rem;
-
     height: 1.03rem;
     margin: 0 auto;
     font-size: .24rem;
@@ -116,8 +117,14 @@ a:hover{
 .content .game-log{
     background: #ffffff;
     padding-bottom: .65rem;
+    /*width: 100%;*/
 
 }
+
+.content .game-log>.row{
+    border-bottom:1px solid #dddddd;
+}
+
 .content .game-log .time-line{
     position: relative;
     font-size: .13rem;
@@ -126,7 +133,6 @@ a:hover{
     width: 74.68%;
     margin: 0 auto;
     padding-bottom: .1rem;
-    border-bottom:1px solid #dddddd;
 
 }
 
@@ -144,8 +150,9 @@ a:hover{
 
 .footer{
     position: fixed;
+    left: 0;
+    right: 0;
     bottom:0;
-    width:100%;
     background: rgba(41,189,224,0.48);
 }
 .footer .row{
