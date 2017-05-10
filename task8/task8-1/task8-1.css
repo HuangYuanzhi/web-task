@@ -1,0 +1,392 @@
+html {
+    font-size: 625%;
+}
+body {
+    background: #fafafa;
+}
+/*页面顶部开始*/
+.page-top {
+    height: .4rem;
+    font-size: .07rem;
+    line-height: .4rem;
+    color: #29b078;
+}
+.page-top .contact-us {
+    float: left;
+    margin-left: 10%;
+}
+.page-top .social-app {
+    float: right;
+    padding-right: 10%;
+}
+
+.page-top .social-app span {
+    display: inline-block;
+    width: .25rem;
+    height: .24rem;
+    margin-left: .1rem;
+    vertical-align: middle;
+}
+.page-top .social-app .wechat {
+    background: url("img/sprite.jpg") no-repeat 0 0;
+}
+.page-top .social-app .qq {
+    background: url("img/sprite.jpg") no-repeat -.29rem 0;
+}
+.page-top .social-app .sina {
+    background: url("img/sprite.jpg") no-repeat -.59rem 0;
+}
+/*页面顶部结束*/
+
+/*页面导航栏开始*/
+.page-nav {
+    background: #29b078;
+}
+
+.page-nav .navbar-header button .icon-bar {
+    background: #ffffff;
+}
+
+.navbar-collapse .navbar-nav a {
+    color: #ffffff;
+    width: .58rem;
+    height: .50rem;
+}
+.navbar-collapse .navbar-nav a:hover {
+    background: #29b078;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+/*页面导航栏结束*/
+
+/*main-top开始*/
+.main {
+    padding-top: .5rem;
+}
+
+.main .main-top-item {
+    text-align: center;
+}
+.main .main-top-item .img-wrapper {
+    position: relative;
+    height: .62rem;
+    margin-bottom: .3rem;
+}
+.main .main-top-item .item-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+
+}
+.item-img-rocket {
+    width: .42rem;
+    height: .62rem;
+    background: url("img/sprite.jpg") no-repeat 0 -.28rem;
+}
+.item-img-book {
+     width: .6rem;
+     height: .48rem;
+     background: url("img/sprite.jpg") no-repeat -.47rem -.28rem;
+ }
+.item-img-people {
+    width: .52rem;
+    height: .55rem;
+    background: url("img/sprite.jpg") no-repeat -1.11rem -.28rem;
+}
+
+.main .main-top-item .item-tt {
+    text-align: center;
+    font-size: .18rem;
+    font-weight: bold;
+}
+.main .main-top-item .item-txt {
+    text-align: left;
+    font-size: .16rem;
+    color: #9d9d9d;
+}
+.main .slide {
+    border-right: 2px dashed #9d9d9d;
+}
+@media screen and (max-width: 767px) {
+    .main .slide{
+        border: none;
+    }
+}
+.main .counts {
+    position: relative;
+    transform: translate(0,50%);
+}
+.main .counts .man-icon {
+    display: inline-block;
+    width: .13rem;
+    height: .13rem;
+    background: url("img/sprite.jpg") no-repeat -.88rem 0;
+}
+.main .counts .user-member {
+    color: #29b078;
+}
+.main .counts p {
+    color: #9d9d9d;
+}
+/*main-top结束*/
+
+/*如何学习开始*/
+.main .middle-hd {
+    height: 1rem;
+    font-size: .18rem;
+    font-weight: bold;
+    line-height: 1rem;
+    text-align: center;
+
+}
+
+
+.main .learn {
+    position: relative;
+}
+
+.main .learn-step {
+    display: flex;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+
+.main .learn .step {
+    width: .6rem;
+    height: .6rem;
+    border-radius: .3rem;
+    background: #ffffff;
+    box-shadow: -1px 1px 2px #9d9d9d;
+    color: #29b078;
+    font-size:.18rem;
+    text-align: center;
+    line-height: .6rem;
+
+}
+.main .learn .step-txt {
+    flex: 1;
+    align-self: center;
+    padding-left: .1rem;
+    font-size: .14rem;
+    color: #999999;
+}
+
+.main .learn .arrow-icon{
+    width: .28rem;
+    height: .24rem;
+    background: url("img/sprite.jpg") no-repeat -1.72rem 0;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+/*使箭头位置居中*/
+@media screen and (min-width:768px ) {
+    .main .learn .arrow-icon {
+        position: relative;
+        transform: translate(0, 110%);
+    }
+}
+/*设备为小屏幕是箭头旋转并居中*/
+@media screen and (max-width:767px ) {
+    .main .learn .arrow-icon {
+        transform: rotateZ(90deg);
+        margin:0 auto;
+    }
+}
+/*步骤4后面的箭头*/
+.main .learn .arrow-hidden {
+    display: none;
+}
+@media screen and (max-width:767px ) {
+    .main .learn .arrow-hidden {
+        display: block;
+    }
+}
+
+
+/*如何学习结束*/
+
+/*学员展示开始*/
+
+
+.show-wall-hd {
+    height: 1rem;
+    font-size: .18rem;
+    font-weight: bold;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.show-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .2rem;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px #999;
+       -moz-box-shadow: 1px 1px 2px #999;
+            box-shadow: 1px 1px 2px #999;
+}
+.show-item .photo{
+    float: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+
+}
+.show-item .photo1 {
+    background: url("img/member1.jpg") no-repeat center;
+}
+.show-item .photo2 {
+    background: url("img/member2.jpg") no-repeat center;
+}
+.show-item .photo3 {
+    background: url("img/member3.jpg") no-repeat center;
+}
+.show-item .photo4 {
+    background: url("img/member4.jpg") no-repeat center;
+}
+.show-item .name {
+    flex: auto;
+    font-size: .18rem;
+    font-weight: bold;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+
+}
+.show-item .intro {
+    font-size: .16rem;
+    color: #999999;
+}
+
+.page-dot {
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    text-align: center;
+}
+.page-dot .dot {
+    display: inline-block;
+    width: .1rem;
+    height: .1rem;
+    border-radius: 50%;
+    background: #ffffff;
+    -webkit-box-shadow: 1px 1px 2px #999;
+       -moz-box-shadow: 1px 1px 2px #999;
+            box-shadow: 1px 1px 2px #999;
+}
+.page-dot .active {
+    background: #29b078;
+}
+/*学员展示结束*/
+
+/*战略合作伙伴开始*/
+.main .partnership-hd {
+    font-size: .18rem;
+    font-weight: bold;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.main .partnership-item {
+    background: #ffffff;
+}
+
+.main .wrapper {
+    display: block;
+    position: relative;
+    height: .8rem;
+
+}
+.wrapper .partner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.wrapper .partner1 {
+    width: 1.42rem;
+    height: .52rem;
+    background: url("img/sprite.jpg") no-repeat 0 -.93rem;
+}
+.wrapper .partner2 {
+    width: .53rem;
+    height: .58rem;
+    background: url("img/sprite.jpg") no-repeat 0 -1.5rem;
+}
+.wrapper .partner3 {
+    width: 1.34rem;
+    height: .47rem;
+    background: url("img/sprite.jpg") no-repeat 0 -2.12rem;
+}
+.wrapper .partner4 {
+    width: 1.69rem;
+    height: .39rem;
+    background: url("img/sprite.jpg") no-repeat 0 -2.64rem;
+}
+.wrapper .partner5 {
+    width: 1.24rem;
+    height: .55rem;
+    background: url("img/sprite.jpg") no-repeat 0 -3.06rem;
+}
+
+/*战略合作伙伴结束*/
+
+/*友情链接开始*/
+
+.main .friend-link-hd {
+    height: 1rem;
+    font-size: .18rem;
+    font-weight: bold;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.link-wrapper .link-list .list-item {
+    float: left;
+}
+.link-wrapper .link-list .list-item a {
+
+    display: block;
+    font-size: .14rem;
+    color: #999999;
+}
+
+/*页尾开始*/
+.footer {
+    position: relative;
+    padding-top: .4rem;
+    color: #ffffff;
+    background: #29b078;
+}
+.footer .footer-info {
+    border-bottom: 1px solid #32c086;
+}
+.footer .footer-item {
+    padding-bottom:.4rem;
+}
+.footer .footer-tt {
+    font-size: .16rem;
+    padding-bottom: .2rem;
+}
+.footer a {
+    font-size: .14rem;
+    color: #ffffff;
+
+}
+.footer .footer-item .wechat-code {
+    width: .92rem;
+    height: .92rem;
+    background: url("img/sprite.jpg") no-repeat 0 -3.65rem;
+}
+.footer .copyright {
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+    text-align: center;
+}
