@@ -1,0 +1,341 @@
+html {
+    font-size: 625%;
+}
+body {
+    background: #fafafa;
+}
+/*页面顶部开始*/
+.page-top {
+    height: .4rem;
+    font-size: .07rem;
+    line-height: .4rem;
+    color: #29b078;
+}
+.page-top .contact-us {
+    float: left;
+    margin-left: 10%;
+}
+.page-top .social-app {
+    float: right;
+    padding-right: 10%;
+}
+
+.page-top .social-app span {
+    display: inline-block;
+    width: .25rem;
+    height: .24rem;
+    margin-left: .1rem;
+    vertical-align: middle;
+}
+.page-top .social-app .wechat {
+    background: url("img/sprite.png") no-repeat 0 -.54rem;
+}
+.page-top .social-app .qq {
+    background: url("img/sprite.png") no-repeat -.3rem -.54rem;
+}
+.page-top .social-app .sina {
+    background: url("img/sprite.png") no-repeat -.6rem -.54rem;
+}
+/*页面顶部结束*/
+
+/*页面导航栏开始*/
+.page-nav {
+    background: #29b078;
+
+}
+.page-nav .navbar-header .navbar-brand {
+    display: block;
+    width: 1.07rem;
+    margin-top: .25rem;
+    background: url("img/sprite.png") no-repeat 0 0;
+
+}
+@media screen and (max-width: 767px) {
+    .page-nav .navbar-header .navbar-brand {
+        margin-top: 0;
+        margin-left: .1rem;
+    }
+}
+
+.page-nav .navbar-header .icon-bar {
+    background: #ffffff;
+}
+.navbar-collapse .navbar-nav a {
+    color: #ffffff;
+    width: .58rem;
+    height: 1rem;
+    line-height: .7rem;
+}
+@media screen and (max-width: 767px) {
+    .navbar-collapse .navbar-nav a {
+        height: .5rem;
+        line-height: .3rem;
+    }
+}
+
+.navbar-collapse .navbar-nav a:hover {
+    background: #29b078;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+.navbar-collapse .navbar-nav a:visited {
+    background: #29b078;
+}
+
+
+/*面包屑导航开始*/
+.page-content .breadcrumb {
+    background: none;
+    height: .8rem;
+    line-height: .8rem;
+
+}
+@media screen and (max-width: 767px) {
+    .page-content .breadcrumb {
+        height: .4rem;
+        line-height: .4rem;
+
+    }
+}
+.page-content .breadcrumb>li+li:before {
+    content: '>';
+}
+.page-content .breadcrumb li {
+    color: #29b078;
+    font-size: .16rem;
+}
+.page-content .breadcrumb li a {
+    color: #000;
+
+}
+/*面包屑导航结束*/
+
+/*职业方向开始*/
+.page-content .career {
+    padding-left: 0;
+    font-size: .14rem;
+    color: #d0d6d9;
+    border-top: 1px solid #d0d6d9;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.page-content .career li {
+
+    display: inline-block;
+    list-style:none;
+    padding: .1rem .05rem;
+}
+.page-content .career li a {
+    color: #000;
+    text-decoration: none;
+}
+.page-content .career li a:hover {
+    color: #ffffff;
+    background: #29b078;
+    text-decoration: none;
+
+}
+/*职业方向结束*/
+
+/*前端开发开始*/
+.page-content .job-tt {
+    font-size: .16rem;
+    font-weight: bold;
+    height: .8rem;
+    line-height: .8rem;
+    border-bottom: 1px solid #d0d6d9;
+
+}
+
+@media screen and (max-width: 767px) {
+    .page-content .job-tt {
+        padding-left: .15rem;
+        height: .6rem;
+        line-height: .6rem;
+    }
+}
+.page-content .job-list {
+    padding-top: .46rem;
+
+}
+
+.job-list .list-item {
+    height: 4.3rem;
+    padding: 0;
+    margin-bottom: .2rem;
+    border:1px solid #edf1f2;
+    -webkit-box-shadow: 1px 1px 1px #999;
+       -moz-box-shadow: 1px 1px 1px #999;
+            box-shadow: 1px 1px 1px #999;
+    border-radius: 4px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.job-list .list-item .list-top {
+    display: flex;
+}
+
+.list-item .list-top .top-photo {
+    margin: .1rem;
+}
+@media screen and (max-width: 767px) {
+
+    .list-item .list-top .top-photo  {
+        width: 1rem;
+        height: 1rem;
+    }
+    .list-item .list-top .top-photo img {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.list-item .list-top .top-txt {
+    flex:1;
+    padding-top: .1rem;
+    padding-right: .1rem;
+    padding-bottom: .1rem;
+    word-break: break-all;
+    text-align: justify;
+
+}
+.list-item .list-top .top-txt h4 {
+    font-weight: bold;
+}
+.list-item .list-btm {
+    font-size: .12rem;
+    color: #999999;
+
+}
+
+.list-item .list-btm .info {
+    width: 50%;
+    height: .4rem;
+    float: left;
+    line-height: .4rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+
+}
+.list-btm .red {
+    color: #ff0000;
+    padding-left: .1rem;
+}
+.list-btm .learning-members {
+    font-size: .14rem;
+    font-weight: bold;
+    color: #000;
+}
+.list-btm .learning-members .red {
+    color: #ff0000;
+    padding-left: 0;
+}
+
+
+.list-item .list-btm .border {
+    border: 1px solid #edf1f2;
+}
+
+
+.list-item .list-btm .salary {
+    float: left;
+    width: 40%;
+    height: 1.08rem;
+    line-height: 1.08rem;
+    text-align: center;
+
+}
+.list-item .list-btm .salary-detail{
+    float: left;
+    width: 60%;
+    height: .36rem;
+    line-height: .36rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+
+.list-btm .salary-detail .money{
+    float: right;
+}
+
+.list-item .list-btm .learning-members{
+    float: left;
+    width: 100%;
+    height: .4rem;
+    line-height: .4rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.list-item .list-btm .tip{
+    float: left;
+    width: 100%;
+    height: .4rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+
+}
+/*前端开发结束*/
+
+/*鼠标hover开始*/
+.job-list .list-item .job-info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 .15rem;
+    height: 4.3rem;
+    padding: .4rem .4rem 0 .4rem;
+    font-size: .16rem;
+    text-indent: .32rem;
+    text-align: justify;
+    border-radius: 4px;
+    color: #fff;
+    background: rgba(0,0,0,.76);
+}
+.job-list .list-item .job-info .info-tt {
+    text-align: center;
+    padding-bottom: .4rem;
+}
+.job-list .list-item:hover .job-info {
+    display: block;
+}
+
+/*页尾开始*/
+.footer {
+    position: relative;
+    margin-top: 1rem;
+    padding-top: .4rem;
+    color: #ffffff;
+    background: #29b078;
+}
+.footer .footer-info {
+    border-bottom: 1px solid #32c086;
+}
+.footer .footer-item {
+    padding-bottom:.4rem;
+}
+.footer .footer-tt {
+    font-size: .16rem;
+    padding-bottom: .2rem;
+}
+.footer a {
+    font-size: .14rem;
+    color: #ffffff;
+
+}
+.footer .footer-item .wechat-code {
+    width: .92rem;
+    height: .92rem;
+    background: url("img/sprite.png") no-repeat 0 -.82rem;
+}
+.footer .copyright {
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+    text-align: center;
+}
