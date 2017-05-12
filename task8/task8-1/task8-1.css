@@ -7,7 +7,7 @@ body {
 /*页面顶部开始*/
 .page-top {
     height: .4rem;
-    font-size: .07rem;
+    font-size: .14rem;
     line-height: .4rem;
     color: #29b078;
 }
@@ -56,6 +56,9 @@ body {
     background: #29b078;
     border-bottom: 2px solid #ffffff;
     box-sizing: border-box;
+}
+.navbar-collapse .navbar-nav a:visited {
+    background: #29b078;
 }
 
 /*页面导航栏结束*/
@@ -361,6 +364,7 @@ body {
 /*页尾开始*/
 .footer {
     position: relative;
+    margin-top: 1rem;
     padding-top: .4rem;
     color: #ffffff;
     background: #29b078;

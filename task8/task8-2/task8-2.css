@@ -7,7 +7,7 @@ body {
 /*页面顶部开始*/
 .page-top {
     height: .4rem;
-    font-size: .07rem;
+    font-size: .14rem;
     line-height: .4rem;
     color: #29b078;
 }
@@ -159,10 +159,13 @@ body {
 
 }
 
-.job-list .list-item {
-    height: 4.3rem;
-    padding: 0;
+.job-list .wrapper{
     margin-bottom: .2rem;
+}
+
+.job-list .list-item {
+
+    padding: 0;
     border:1px solid #edf1f2;
     -webkit-box-shadow: 1px 1px 1px #999;
        -moz-box-shadow: 1px 1px 1px #999;
@@ -289,7 +292,7 @@ body {
     left: 0;
     right: 0;
     margin: 0 .15rem;
-    height: 4.3rem;
+    height: 100%;
     padding: .4rem .4rem 0 .4rem;
     font-size: .16rem;
     text-indent: .32rem;
