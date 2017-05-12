@@ -49,8 +49,8 @@ body {
 
 .navbar-collapse .navbar-nav a {
     color: #ffffff;
-    width: .58rem;
     height: .50rem;
+    text-align: center;
 }
 .navbar-collapse .navbar-nav a:hover {
     background: #29b078;
