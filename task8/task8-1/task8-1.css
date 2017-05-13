@@ -12,20 +12,19 @@ body {
     color: #29b078;
 }
 .page-top .contact-us {
-    float: left;
-    margin-left: 10%;
+
 }
 .page-top .social-app {
-    float: right;
-    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height: .4rem;
 }
 
 .page-top .social-app span {
-    display: inline-block;
     width: .25rem;
     height: .24rem;
     margin-left: .1rem;
-    vertical-align: middle;
 }
 .page-top .social-app .wechat {
     background: url("img/sprite.jpg") no-repeat 0 0;
@@ -65,11 +64,16 @@ body {
 
 /*main-top开始*/
 .main {
-    padding-top: .5rem;
+    padding-top: .3rem;
+}
+.main .main-top{
+    padding-bottom: .3rem;
 }
 
 .main .main-top-item {
     text-align: center;
+    padding-top: .2rem;
+
 }
 .main .main-top-item .img-wrapper {
     position: relative;
@@ -102,6 +106,7 @@ body {
 }
 
 .main .main-top-item .item-tt {
+    padding-bottom: .2rem;
     text-align: center;
     font-size: .18rem;
     font-weight: bold;
@@ -154,21 +159,22 @@ body {
 
 .main .learn-step {
     display: flex;
+    align-items: center;
     padding-top: .1rem;
     padding-bottom: .1rem;
 }
 
 
 .main .learn .step {
-    width: .6rem;
-    height: .6rem;
-    border-radius: .3rem;
+    width: .5rem;
+    height: .5rem;
+    border-radius: .25rem;
     background: #ffffff;
     box-shadow: -1px 1px 2px #9d9d9d;
     color: #29b078;
     font-size:.18rem;
     text-align: center;
-    line-height: .6rem;
+    line-height: .5rem;
 
 }
 .main .learn .step-txt {
@@ -186,13 +192,7 @@ body {
     margin-left: .1rem;
     margin-right: .1rem;
 }
-/*使箭头位置居中*/
-@media screen and (min-width:768px ) {
-    .main .learn .arrow-icon {
-        position: relative;
-        transform: translate(0, 110%);
-    }
-}
+
 /*设备为小屏幕是箭头旋转并居中*/
 @media screen and (max-width:767px ) {
     .main .learn .arrow-icon {
@@ -229,6 +229,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: .2rem;
+    margin-bottom: .2rem;
     background: #fff;
     -webkit-box-shadow: 1px 1px 2px #999;
        -moz-box-shadow: 1px 1px 2px #999;
@@ -296,6 +297,9 @@ body {
 }
 
 .main .partnership-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
     background: #ffffff;
 }
 
@@ -303,6 +307,19 @@ body {
     display: block;
     position: relative;
     height: .8rem;
+    width: 20%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px){
+    .main .wrapper {
+        width: 100%;
+    }
+}
+.main .wrapper:hover {
+    -webkit-box-shadow: 1px 1px 2px #999;
+    -moz-box-shadow: 1px 1px 2px #999;
+    box-shadow: 1px 1px 2px #999;
 
 }
 .wrapper .partner {
@@ -350,9 +367,23 @@ body {
     line-height: 1rem;
     text-align: center;
 }
+.link-wrapper .link-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .link-wrapper .link-list .list-item {
-    float: left;
+    width: 10%;
+}
+@media screen and (max-width: 767px){
+    .link-wrapper .link-list .list-item {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 424px){
+    .link-wrapper .link-list .list-item {
+        width: 33.33%;
+    }
 }
 .link-wrapper .link-list .list-item a {
 
@@ -364,7 +395,7 @@ body {
 /*页尾开始*/
 .footer {
     position: relative;
-    margin-top: 1rem;
+    margin-top: .4rem;
     padding-top: .4rem;
     color: #ffffff;
     background: #29b078;
@@ -374,6 +405,14 @@ body {
 }
 .footer .footer-item {
     padding-bottom:.4rem;
+}
+.footer .footer-item .wechat{
+    float: right;
+}
+@media screen and (max-width: 767px){
+    .footer .footer-item .wechat{
+        float: left;
+    }
 }
 .footer .footer-tt {
     font-size: .16rem;

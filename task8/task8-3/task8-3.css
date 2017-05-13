@@ -12,20 +12,19 @@ body {
     color: #29b078;
 }
 .page-top .contact-us {
-    float: left;
-    margin-left: 10%;
+
 }
 .page-top .social-app {
-    float: right;
-    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height: .4rem;
 }
 
 .page-top .social-app span {
-    display: inline-block;
     width: .25rem;
     height: .24rem;
     margin-left: .1rem;
-    vertical-align: middle;
 }
 .page-top .social-app .wechat {
     background: url("img/sprite.png") no-repeat 0 -.54rem;
@@ -115,6 +114,9 @@ body {
 /*合作企业侧边栏开始*/
 .page-content .slide{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
     background: #fff;
     -webkit-box-shadow: 1px 1px 1px #e1e1e1;
        -moz-box-shadow: 1px 1px 1px #e1e1e1;
@@ -126,13 +128,10 @@ body {
     text-align: center;
     border-bottom: 1px solid #e1e1e1;
     height: .6rem;
+    width: 100%;
     line-height: .6rem;
 }
-.page-content .slide .slide-list{
-    position: relative;
-    transform: translate(20%,0);
-    width:60%;
-}
+
 .page-content .slide .slide-list li{
     font-size: .14rem;
     list-style-image: url("img/circle.png");
@@ -146,7 +145,6 @@ body {
         height: .3rem;
         line-height: .3rem;
     }
-
 }
 
 .slide-list li a{
@@ -168,7 +166,6 @@ body {
     text-indent: .28rem;
     text-align: justify;
     background: #fff;
-    margin: 0 .3rem;
     -webkit-box-shadow: 1px 1px 1px #e1e1e1;
     -moz-box-shadow: 1px 1px 1px #e1e1e1;
     box-shadow: 1px 1px 1px #e1e1e1;
@@ -182,9 +179,6 @@ body {
 
 .main .main-top{
     border-bottom: 1px solid #e1e1e1;
-    padding-left: .6rem;
-    padding-right: .6rem;
-    padding-top: .25rem;
 }
 @media screen and (max-width:767px){
     .page-content .main-top{
@@ -198,6 +192,18 @@ body {
 .main .main-top .logo{
      text-align: center;
 }
+.main-top .intro{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-right: .6rem;
+
+}
+@media screen and (max-width:767px){
+    .main-top .intro{
+        padding: .05rem;
+
+    }
+}
 .page-content .main .info{
     padding-top: .4rem;
     padding-left: .6rem;
@@ -205,9 +211,9 @@ body {
 }
 @media screen and (max-width:767px){
     .page-content .main .info{
-        padding-top: .1rem;
-        padding-left: .1rem;
-        padding-right: .1rem;
+        padding-top: .15rem;
+        padding-left: .15rem;
+        padding-right: .15rem;
     }
 }
 /*主内容结束*/
@@ -215,7 +221,7 @@ body {
 /*页尾开始*/
 .footer {
     position: relative;
-    margin-top: 1rem;
+    margin-top: .4rem;
     padding-top: .4rem;
     color: #ffffff;
     background: #29b078;
@@ -225,6 +231,14 @@ body {
 }
 .footer .footer-item {
     padding-bottom:.4rem;
+}
+.footer .footer-item .wechat{
+    float: right;
+}
+@media screen and (max-width: 767px){
+    .footer .footer-item .wechat{
+        float: left;
+    }
 }
 .footer .footer-tt {
     font-size: .16rem;

@@ -12,20 +12,19 @@ body {
     color: #29b078;
 }
 .page-top .contact-us {
-    float: left;
-    margin-left: 10%;
+
 }
 .page-top .social-app {
-    float: right;
-    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height: .4rem;
 }
 
 .page-top .social-app span {
-    display: inline-block;
     width: .25rem;
     height: .24rem;
     margin-left: .1rem;
-    vertical-align: middle;
 }
 .page-top .social-app .wechat {
     background: url("img/sprite.png") no-repeat 0 -.54rem;
@@ -112,7 +111,7 @@ body {
 
 /*职业方向开始*/
 .page-content .career {
-    padding-left: 0;
+    padding-left: .1rem;
     font-size: .14rem;
     color: #d0d6d9;
     border-top: 1px solid #d0d6d9;
@@ -149,7 +148,6 @@ body {
 
 @media screen and (max-width: 767px) {
     .page-content .job-tt {
-        padding-left: .15rem;
         height: .6rem;
         line-height: .6rem;
     }
@@ -310,9 +308,10 @@ body {
 }
 
 /*页尾开始*/
+/*页尾开始*/
 .footer {
     position: relative;
-    margin-top: 1rem;
+    margin-top: .4rem;
     padding-top: .4rem;
     color: #ffffff;
     background: #29b078;
@@ -322,6 +321,14 @@ body {
 }
 .footer .footer-item {
     padding-bottom:.4rem;
+}
+.footer .footer-item .wechat{
+    float: right;
+}
+@media screen and (max-width: 767px){
+    .footer .footer-item .wechat{
+        float: left;
+    }
 }
 .footer .footer-tt {
     font-size: .16rem;
