@@ -11,31 +11,28 @@ body {
     line-height: .4rem;
     color: #29b078;
 }
-.page-top .contact-us {
-
-}
 .page-top .social-app {
     display: flex;
     justify-content: flex-end;
     align-items:center;
     height: .4rem;
 }
-
 .page-top .social-app span {
     width: .25rem;
     height: .24rem;
     margin-left: .1rem;
 }
 .page-top .social-app .wechat {
-    background: url("img/sprite.png") no-repeat 0 -.54rem;
+    background: url("img/public.png") no-repeat 0 0;
 }
 .page-top .social-app .qq {
-    background: url("img/sprite.png") no-repeat -.3rem -.54rem;
+    background: url("img/public.png") no-repeat -.3rem 0;
 }
 .page-top .social-app .sina {
-    background: url("img/sprite.png") no-repeat -.6rem -.54rem;
+    background: url("img/public.png") no-repeat -.6rem 0;
 }
 /*页面顶部结束*/
+
 
 /*页面导航栏开始*/
 .page-nav {
@@ -46,7 +43,7 @@ body {
     display: block;
     width: 1.07rem;
     margin-top: .25rem;
-    background: url("img/sprite.png") no-repeat 0 0;
+    background: url("img/jnshu-logo.png") no-repeat 0 0;
 
 }
 @media screen and (max-width: 767px) {
@@ -55,23 +52,23 @@ body {
         margin-left: .1rem;
     }
 }
-
 .page-nav .navbar-header .icon-bar {
     background: #ffffff;
 }
 .navbar-collapse .navbar-nav a {
     color: #ffffff;
     height: 1rem;
+    width: 1rem;
     line-height: .7rem;
     text-align: center;
 }
 @media screen and (max-width: 767px) {
     .navbar-collapse .navbar-nav a {
         height: .5rem;
+        width: 100%;
         line-height: .3rem;
     }
 }
-
 .navbar-collapse .navbar-nav a:hover {
     background: #29b078;
     border-bottom: 2px solid #ffffff;
@@ -121,6 +118,7 @@ body {
     -webkit-box-shadow: 1px 1px 1px #e1e1e1;
        -moz-box-shadow: 1px 1px 1px #e1e1e1;
             box-shadow: 1px 1px 1px #e1e1e1;
+    margin-bottom: .5rem;
 }
 .page-content .slide .slide-tt{
     font-size: .16rem;
@@ -163,21 +161,23 @@ body {
 /*主内容开始*/
 .page-content .main{
     color: #999999;
-    text-indent: .28rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
     text-align: justify;
     background: #fff;
     -webkit-box-shadow: 1px 1px 1px #e1e1e1;
     -moz-box-shadow: 1px 1px 1px #e1e1e1;
     box-shadow: 1px 1px 1px #e1e1e1;
 }
-@media screen and (max-width:767px){
-    .page-content .main{
-        margin: 0;
-    }
-
+.page-content .main p{
+    line-height: .28rem;
+    margin-bottom: .15rem;
 }
 
 .main .main-top{
+    padding-top: .25rem;
+    padding-right: .6rem;
+    padding-left: .6rem;
     border-bottom: 1px solid #e1e1e1;
 }
 @media screen and (max-width:767px){
@@ -186,32 +186,26 @@ body {
         padding-left: .1rem;
         padding-right: .1rem;
     }
-
 }
 
 .main .main-top .logo{
      text-align: center;
 }
-.main-top .intro{
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    padding-right: .6rem;
 
-}
 @media screen and (max-width:767px){
     .main-top .intro{
         padding: .05rem;
-
     }
 }
 .page-content .main .info{
+    text-indent: .28rem;
     padding-top: .4rem;
     padding-left: .6rem;
     padding-right: .6rem;
 }
 @media screen and (max-width:767px){
     .page-content .main .info{
-        padding-top: .15rem;
+        padding-top: .2rem;
         padding-left: .15rem;
         padding-right: .15rem;
     }
@@ -221,18 +215,36 @@ body {
 /*页尾开始*/
 .footer {
     position: relative;
-    margin-top: .4rem;
-    padding-top: .4rem;
+
     color: #ffffff;
     background: #29b078;
 }
 .footer .footer-info {
-    border-bottom: 1px solid #32c086;
+
 }
 .footer .footer-item {
-    padding-bottom:.4rem;
+    padding-top: .4rem;
 }
+.footer .footer-item a{
+    display: inline-block;
+    height: .3rem;
+    line-height: .3rem;
+    text-decoration: none;
+    font-size: .14rem;
+}
+.footer .footer-item a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer .footer-item:nth-of-type(1) .footer-tt{
+    padding-bottom: .7rem;
+}
+.footer .footer-item:nth-of-type(2) .footer-tt{
+    padding-bottom: .4rem;
+}
+
 .footer .footer-item .wechat{
+    padding-bottom: .2rem;
     float: right;
 }
 @media screen and (max-width: 767px){
@@ -249,13 +261,10 @@ body {
     color: #ffffff;
 
 }
-.footer .footer-item .wechat-code {
-    width: .92rem;
-    height: .92rem;
-    background: url("img/sprite.png") no-repeat 0 -.82rem;
-}
 .footer .copyright {
     padding-top: .05rem;
     padding-bottom: .05rem;
     text-align: center;
+    border-top: 1px solid #32c086;
 }
+/*页尾结束*/
