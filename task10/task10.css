@@ -25,7 +25,7 @@ html{
     padding: 0 .1rem;
     background: #1d7ad9;
 }
-.page-top .log button:active{
+.page-top .log button:hover{
     padding-left: .36rem;
     padding-right: .36rem;
     color: #000;
@@ -60,7 +60,7 @@ html{
         margin: .05rem;
     }
 }
-.page-nav .navbar-collapse button:active{
+.page-nav .navbar-collapse button:hover{
     color: #fff;
     background: #1d7ad9;
 
@@ -90,14 +90,21 @@ label{
 }
 @media screen and (max-width: 767px) {
     .step-wrapper{
-        width: 100%;
+        width: 90%;
+        float: none;
+        margin: 0 auto;
     }
 }
 .step{
+    margin-right: -1px;
+    margin-left: -1px;
     position: relative;
     display: inline-block;
     width: 25%;
     height: 1rem;
+}
+.step:hover{
+    z-index: 9;
 }
 .step .line{
     position: absolute;
@@ -144,15 +151,17 @@ label{
         font-size: .14rem;
     }
 }
-.finished .line{
+
+.step:hover .line{
     background: #ff7f02;
 }
-.finished .circle{
+.step:hover .circle{
     background: #ff7f02;
 }
-.finished .step-txt{
+.step:hover .step-txt{
     color: #ff7f02;
 }
+
 /*进行步骤状态栏开始*/
 
 /*步骤详情开始*/
@@ -313,7 +322,6 @@ input[type="number"] {
     border-radius: .04rem;
     border: none;
     outline: none;
-
 }
 /*下一步结束*/
 
@@ -327,6 +335,7 @@ input[type="number"] {
 }
 .footer .web{
     font-size: .18rem;
+    padding-top: .04rem;
     margin-bottom: .6rem;
 }
 .footer .web-info{
@@ -337,8 +346,7 @@ input[type="number"] {
 .footer .web-info a{
     display: inline-block;
     height: .3rem;
-    padding-left: .2rem;
-    padding-right: .2rem;
+    padding-right: .4rem;
     line-height: .3rem;
     font-size: .14rem;
     text-decoration: none;
