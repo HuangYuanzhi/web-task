@@ -1,9 +1,7 @@
 html{
     font-size: 625%;
 }
-body{
-    
-}
+
 
 /*页面顶部登录注册开始*/
 .page-top{
@@ -19,15 +17,17 @@ body{
     justify-content: flex-end;
     font-size: .16rem;
     line-height: .4rem;
+    padding-right: 0;
 }
 .page-top .log button{
     border: none;
     outline: none;
-    padding-left: .1rem;
-    padding-right: .1rem;
+    padding: 0 .1rem;
     background: #1d7ad9;
 }
 .page-top .log button:active{
+    padding-left: .36rem;
+    padding-right: .36rem;
     color: #000;
     background: #fff;
 }
@@ -42,6 +42,7 @@ body{
 }
 .page-nav .navbar-collapse{
     float: right;
+    padding-right: 0;
 }
 .page-nav .navbar-collapse button{
     font-size: .16rem;
@@ -62,13 +63,35 @@ body{
 .page-nav .navbar-collapse button:active{
     color: #fff;
     background: #1d7ad9;
-}
 
+}
+.page-nav .navbar-collapse button:last-of-type{
+    margin-right: 0;
+}
 /*页面导航栏结束*/
 
 /*进行步骤状态栏开始*/
+label{
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    font-weight:normal;
+}
+
+@media screen and (max-width: 767px) {
+    label{
+        margin-top: .1rem;
+        margin-bottom: .1rem;
+    }
+}
 .step-wrapper{
     font-size:0;
+    width: 50%;
+    float: right;
+}
+@media screen and (max-width: 767px) {
+    .step-wrapper{
+        width: 100%;
+    }
 }
 .step{
     position: relative;
@@ -130,3 +153,212 @@ body{
 .finished .step-txt{
     color: #ff7f02;
 }
+/*进行步骤状态栏开始*/
+
+/*步骤详情开始*/
+.choice-model .choice-tt{
+    font-size: .22rem;
+    font-weight: bold;
+    border-left: 4px solid #1d7ad9;
+    padding-left: .1rem;
+    margin-top: .5rem;
+    margin-bottom: .15rem;
+}
+.choice-model .choice-list-tt{
+    display: flex;
+    align-items: center;
+    height: .45rem;
+    font-size: .18rem;
+    color: #1d7ad9;
+    background: #f4f4f4;
+
+}
+
+.choice-model .choice-list-tt .choice-list-icon{
+    display: inline-block;
+    width: .22rem;
+    height: .2rem;
+    margin-right: .05rem;
+}
+.choice-model .choice-list-tt .box-type{
+    background: url("img/step-detail-icon.png") no-repeat 2px 2px;
+}
+.choice-model .choice-list-tt .box-size{
+    background: url("img/step-detail-icon.png") no-repeat 0 -20px;
+}
+.choice-model .choice-list-tt .box-material{
+    background: url("img/step-detail-icon.png") no-repeat 2px -45px;
+}
+
+
+.choice-model .choice-list {
+    position: relative;
+    border-top: 2px solid #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
+}
+.choice-model .choice-list .wrapper{
+    display: flex;
+    align-items: center;
+    font-size: .18rem;
+    font-weight: normal;
+    color: #666666;
+
+}
+@media screen and (max-width: 767px){
+    .choice-model .choice-list .wrapper{
+        display: inline-block;
+    }
+}
+
+
+.choice-list input[type='radio'] {
+    display: none;
+}
+
+.choice-list .radio-icon{
+    margin-right: .6rem;
+    padding-left: .36rem;
+    cursor: pointer;
+    background: url("img/radio.png") no-repeat 0 -18px;
+}
+.choice-list .no-margin-r{
+    margin-right: 0;
+}
+
+.choice-list input[type='radio']:checked+label{
+    background: url("img/radio.png") no-repeat 0 4px;
+}
+.choice-list .wrapper .select-wrapper{
+    padding-top: .09rem;
+}
+.choice-list .wrapper select{
+    float: right;
+    margin-right: .1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .1rem .5rem .1rem .2rem;
+    font-size: .14rem;
+    background: url("img/detail-icon.png") no-repeat .96rem .06rem;
+}
+@media screen and (max-width: 767px){
+    .choice-list .wrapper select{
+        float: none;
+        margin-bottom: .1rem;
+    }
+}
+
+
+/*确定尺寸开始*/
+    /*去除小箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+    /*去除小箭头*/
+
+.choice-model .choice-list .flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .choice-model .choice-list .flex{
+        display: block;
+    }
+}
+.choice-list .radius>div{
+    width: 25%;
+}
+@media screen and (max-width: 767px){
+    .choice-list .radius>div{
+        width: auto;
+    }
+}
+
+.choice-list .radius input[type='number'] {
+    margin-left: .1rem;
+    margin-right: .05rem;
+    width: .7rem;
+    border: 1px solid #e8e8e8;
+}
+
+
+
+/*下一步开始*/
+.choice-model .next-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.85rem;
+    border-bottom: 2px solid #e7e7e7;
+    margin-bottom: .5rem;
+}
+@media screen and (max-width: 767px){
+    .choice-model .next-btn-wrapper{
+        height: 1rem;
+    }
+}
+.next-btn-wrapper .next-btn{
+    width: 1.8rem;
+    height: .46rem;
+    line-height: .46rem;
+    text-align: center;
+    font-size: .24rem;
+    color: #ffffff;
+    background: #e15053;
+    border-radius: .04rem;
+    border: none;
+    outline: none;
+
+}
+/*下一步结束*/
+
+
+
+/*页尾开始*/
+.footer{
+    padding-top: .7rem;
+    background: #f9f9f9;
+    color: #999999;
+}
+.footer .web{
+    font-size: .18rem;
+    margin-bottom: .6rem;
+}
+.footer .web-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .6rem;
+}
+.footer .web-info a{
+    display: inline-block;
+    height: .3rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    line-height: .3rem;
+    font-size: .14rem;
+    text-decoration: none;
+    color: #999999;
+}
+.footer .web-info a:hover{
+    color: #1d7ad9;
+}
+.footer .contact-us {
+    margin-bottom: .6rem;
+}
+.footer .contact-us .ways{
+    font-size: .14rem;
+    padding-right: .1rem;
+}
+/*页尾结束*/
+ .copyright{
+     font-size: .12rem;
+     line-height: .34rem;
+     text-align: center;
+     background: #1d7ad9;
+     color: #ffffff;
+ }

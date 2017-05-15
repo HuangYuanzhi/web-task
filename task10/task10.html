@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no">
+    <title>task10</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="task10.css">
+</head>
+<body>
+<!--页面顶部登录注册开始-->
+<div class="page-top">
+    <div class="container">
+        <div class="row">
+            <div class="contact-us col-sm-8 hidden-xs">
+                客服热线：010-594-78634
+            </div>
+            <div class="log col-sm-4">
+                <button class="log-in" value="登录">登录</button>
+                <button class="register" value="注册">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面顶部登录注册结束-->
+
+<!--页面导航栏开始-->
+<div class="page-nav">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <button>首页</button>
+                <button>在线定制</button>
+                <button>标准箱</button>
+                <button>标准箱</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面导航栏结束-->
+
+<!--进行步骤状态栏开始-->
+<div class="container">
+    <div class="row">
+        <div class="step-wrapper">
+            <div class="step finished">
+                <div class="line"></div>
+                <div class="circle">1</div>
+                <div class="step-txt">
+                    1.定制纸箱
+                </div>
+            </div>
+            <div class="step">
+                <div class="line"></div>
+                <div class="circle">2</div>
+                <div class="step-txt">
+                    2.选择数量
+                </div>
+            </div>
+            <div class="step">
+                <div class="line"></div>
+                <div class="circle">3</div>
+                <div class="step-txt">
+                    3.上传附件
+                </div>
+            </div>
+            <div class="step">
+                <div class="line"></div>
+                <div class="circle">4</div>
+                <div class="step-txt">
+                    4.确认下单
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--进行步骤状态栏结束-->
+
+<!--步骤详情开始-->
+<div class="choice-model container">
+    <div class="row">
+        <div class="choice-tt">
+            请您按照以下步骤来定制您的纸箱
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <!--选择箱型开始-->
+            <div class="row">
+                <div class="choice-list-tt col-sm-12">
+                    <span class="choice-list-icon box-type"></span> <span>选择箱型</span>
+                </div>
+                <div class="choice-list col-sm-12">
+                    <form action="#">
+                        <div class="wrapper box-wrapper row">
+                            <div class="col-sm-9 col-lg-10">
+                                <div class="flex">
+                                    <div>
+                                        <input type="radio" name="choice-box" id="a"><label for="a" class="radio-icon">对口箱</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="choice-box" id="b"><label for="b" class="radio-icon">飞机盒</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="choice-box" id="c"><label for="c" class="radio-icon no-margin-r">天地盖</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-lg-2">
+                                <select name="choice-box">
+                                    <option value="1">查看详情</option>
+                                    <option value="2">查看详情</option>
+                                    <option value="3">查看详情</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--选择箱型结束-->
+            <!--确定尺寸开始-->
+            <div class="row">
+                <div class="choice-list-tt col-sm-12">
+                    <span class="choice-list-icon box-size"></span> <span>确定尺寸</span>
+                </div>
+                <div class="choice-list col-sm-12">
+                    <form class="size" action="#">
+                        <div class="wrapper size-wrapper row">
+                            <div class="col-sm-9 col-lg-10">
+                                <div class="radius flex">
+                                    <div>
+                                        <input type="radio" name="radius" id="d"><label for="d" class="radio-icon">外径</label>
+                                    </div>
+                                    <div class="length">
+                                        <label for="e">长<input type="number" name="length" id="e">mm</label>
+                                    </div>
+                                    <div class="width">
+                                        <label for="f">宽<input type="number" name="width" id="f">mm</label>
+                                    </div>
+                                    <div class="height">
+                                        <label for="g">高<input type="number" name="height" id="g">mm</label>
+                                    </div>
+                                </div>
+                                <div class="radius flex">
+                                    <div class="">
+                                        <input type="radio" name="radius" id="h"><label for="h" class="radio-icon">内径</label>
+                                    </div>
+                                    <div class="length">
+                                        <label for="i">长<input type="number" name="length" id="i">mm</label>
+                                    </div>
+                                    <div class="width">
+                                        <label for="j">宽<input type="number" name="width" id="j">mm</label>
+                                    </div>
+                                    <div class="height">
+                                        <label for="k">高<input type="number" name="height" id="k">mm</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-lg-2 flex-end">
+                                <select name="choice-box">
+                                    <option value="1">查看详情</option>
+                                    <option value="2">查看详情</option>
+                                    <option value="3">查看详情</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--确定尺寸结束-->
+            <!--选择材质开始-->
+            <div class="row">
+                <div class="choice-list-tt col-sm-12">
+                    <span class="choice-list-icon box-material"></span> <span>选择箱型</span>
+                </div>
+                <div class="choice-list col-sm-12">
+                    <form action="#">
+                        <div class="wrapper material-wrapper row">
+                            <div class="col-sm-9 col-lg-10">
+                                <div class="flex">
+                                    <div>
+                                        <input type="radio" name="material" id="l"><label for="l" class="radio-icon">三层A瓦优质</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="material" id="m"><label for="m" class="radio-icon">三层A瓦优质</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="material" id="n"><label for="n" class="radio-icon">三层A瓦优质</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="material" id="o"><label for="o" class="radio-icon">三层A瓦优质</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="material" id="p"><label for="p" class="radio-icon no-margin-r">三层A瓦优质</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-sm-3 col-lg-2">
+                                <select name="choice-box">
+                                    <option value="1">查看详情</option>
+                                    <option value="2">查看详情</option>
+                                    <option value="3">查看详情</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--选择材质结束-->
+        </div>
+    </div>
+
+
+    <!--开始下一步开始-->
+    <div class="row">
+        <div class="next-btn-wrapper col-sm-12">
+            <button class="next-btn">
+                下一步
+            </button>
+        </div>
+    </div>
+    <!--开始下一步结束-->
+
+</div>
+<!--步骤详情结束-->
+
+<!--页尾开始-->
+<div class="footer">
+    <div class="container">
+        <div class="web col-md-4">
+            51包装网— 纸箱包装首选服务平台
+        </div>
+        <div class="web-info col-md-4">
+            <a href="#">关于我们</a>
+            <a href="#">配送流程</a>
+            <a href="#">联系我们</a>
+            <a href="#">下单指南</a>
+            <a href="#">媒体介绍</a>
+        </div>
+        <div class="contact-us col-md-4">
+            <div class="ways pull-left">
+                <p>TEL：400-0000-000</p>
+                <p>企业QQ：123456789</p>
+                <p>微信号：XXXXXXX</p>
+            </div>
+            <div class="pull-right">
+                <img src="img/qrcode.png" alt="微信二维码">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--页尾结束-->
+
+<div class="copyright">
+    <span>北京五一包装科技有限公司Copyright ©2015 </span>&nbsp;&nbsp;
+    <span>51baozhuang.com015   All rights reserved.   京icp备99999999-1</span>
+</div>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
