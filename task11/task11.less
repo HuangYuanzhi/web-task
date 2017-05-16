@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@body-bg: #eff0f4;
+@blue: #5fc0cd;
+@b:block;
+@ib:inline-block;
+@f:flex;
+
+html{
+  font-size: 625%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: @body-bg;
+}
+//头部按钮相同部分开始
+.top-btn(@color:#ffffff){
+  display: @ib;
+  font-size: .16rem;
+  color:@color;
+  text-decoration: none;
+  line-height: .45rem;
+  padding: 0 .15rem;
+}
+//头部按钮相同部分结束
+.page-top{
+  position: relative;
+  height: .45rem;
+  width: 100%;
+  justify-content: space-around;
+  background: @blue;
+  .top-left{
+    .top-btn();
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  h3{
+    color: #ffffff;
+    margin: 0;
+    font-size: .18rem;
+    font-weight:normal;
+    line-height: .45rem;
+    text-align: center;
+  }
+  .top-right{
+    .top-btn();
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+}
+
+//input公共样式开始
+.account-style{
+  display: flex;
+  align-items: center;
+  height: .5rem;
+  margin-top: .07rem;
+  background: #ffffff;
+  label{
+    font-size: 0;
+  }
+  span{
+    display: @ib;
+    width: .14rem;
+    height: .2rem;
+    padding: 0 .18rem;
+  }
+  input{
+    display: @ib;
+    flex: 1;
+    height: .25rem;
+    font-size: .16rem;
+    border: none;
+    border-left: 2px solid #eaedee;
+    outline: none;
+    padding-left: .16rem;
+    &:-moz-placeholder{
+      color: #e1e5e7;
+    }
+    &::-webkit-input-placeholder{
+      color: #e1e5e7;
+    }
+    &:-ms-input-placeholder{
+      color: #e1e5e7;
+    }
+  }
+}
+//input公共样式结束
+
+.content{
+  .user-account{
+    .account-style;
+    span{
+      background: url("img/iphone.png") no-repeat center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+
+  .user-password{
+    .account-style;
+    span{
+      background: url("img/locked-2.png") no-repeat center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+
+  .login-btn{
+    height: .5rem;
+    background: @blue;
+    margin-top: .35rem;
+    font-size: .18rem;
+    color: #ffffff;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  a{
+    font-size: .16rem;
+    color: @blue;
+    text-decoration: none;
+    float: right;
+    padding-right: .15rem;
+  }
+}
