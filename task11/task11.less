@@ -5,6 +5,8 @@
 @b:block;
 @ib:inline-block;
 @f:flex;
+@abs:absolute;
+@rel:relative;
 
 html{
   font-size: 625%;
@@ -15,47 +17,60 @@ body {
   background-color: @body-bg;
 }
 //头部按钮相同部分开始
-.top-btn(@color:#ffffff){
+@top-lh: .45rem;
+@top-c: #ffffff;
+@text-d: none;
+@contaniner-padding: .15rem;
+.top-btn(){
   display: @ib;
   font-size: .16rem;
-  color:@color;
-  text-decoration: none;
-  line-height: .45rem;
-  padding: 0 .15rem;
+  color: @top-c;
+  text-decoration: @text-d;
+  line-height: @top-lh;
+  padding: 0 @contaniner-padding;
 }
 //头部按钮相同部分结束
 .page-top{
-  position: relative;
-  height: .45rem;
-  width: 100%;
-  justify-content: space-around;
+  position: @rel;
   background: @blue;
   .top-left{
     .top-btn();
-    position: absolute;
+    position: @abs;
     top: 0;
     left: 0;
 
   }
   h3{
-    color: #ffffff;
+    color: @top-c;
     margin: 0;
     font-size: .18rem;
     font-weight:normal;
-    line-height: .45rem;
+    line-height: @top-lh;
     text-align: center;
   }
   .top-right{
     .top-btn();
-    position: absolute;
+    position: @abs;
     top: 0;
     right: 0;
 
   }
 }
 
+.ph(@phc:#e1e5e7){
+  &:-moz-placeholder{
+    color: @phc;
+  }
+  &::-webkit-input-placeholder{
+    color: @phc;
+  }
+  &:-ms-input-placeholder{
+    color: @phc;
+  }
+}
+
 //input公共样式开始
-.account-style{
+.user-info{
   display: flex;
   align-items: center;
   height: .5rem;
@@ -63,12 +78,6 @@ body {
   background: #ffffff;
   label{
     font-size: 0;
-  }
-  span{
-    display: @ib;
-    width: .14rem;
-    height: .2rem;
-    padding: 0 .18rem;
   }
   input{
     display: @ib;
@@ -79,35 +88,30 @@ body {
     border-left: 2px solid #eaedee;
     outline: none;
     padding-left: .16rem;
-    &:-moz-placeholder{
-      color: #e1e5e7;
-    }
-    &::-webkit-input-placeholder{
-      color: #e1e5e7;
-    }
-    &:-ms-input-placeholder{
-      color: #e1e5e7;
-    }
+    .ph
   }
+}
+.user-icon(@imgurl){
+  display: @ib;
+  width: .14rem;
+  height: .2rem;
+  padding: 0 .18rem;
+  background: @imgurl no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 //input公共样式结束
 
 .content{
   .user-account{
-    .account-style;
     span{
-      background: url("img/iphone.png") no-repeat center;
-      -webkit-background-size: contain;
-      background-size: contain;
+      .user-icon(url("img/iphone.png"));
     }
   }
 
   .user-password{
-    .account-style;
     span{
-      background: url("img/locked-2.png") no-repeat center;
-      -webkit-background-size: contain;
-      background-size: contain;
+      .user-icon(url("img/locked-2.png"));
     }
   }
 
@@ -125,8 +129,8 @@ body {
   a{
     font-size: .16rem;
     color: @blue;
-    text-decoration: none;
+    text-decoration: @text-d;
     float: right;
-    padding-right: .15rem;
+    padding-right: @contaniner-padding;
   }
 }
