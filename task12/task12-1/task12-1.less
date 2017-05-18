@@ -1,0 +1,187 @@
+@charset "utf-8";
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,button {
+  margin:0;
+  padding:0;
+  list-style: none;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url( "fonts/icomoon.woff") format("woff"),url( "fonts/icomoon.eot") format("embedded-opentype"),url( "fonts/icomoon.ttf") format("truetype"),url( "fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@head-h: .4rem;
+@blue: #5fc0cd;
+@white: #ffffff;
+@nav-h: 1.46rem;
+@container-p: .15rem;
+.icon(@color) {
+  font-family: "icomoon";
+  font-weight: normal;
+  font-style: normal;
+  color: @color;
+}
+
+html {
+  font-size: 625%;
+}
+body {
+  background-color: @white;
+}
+
+//头部开始
+header {
+  position: fixed;
+  background: @blue;
+  height: @head-h;
+  line-height: @head-h;
+  font-size: .18rem;
+  width: 100%;
+  color: @white;
+  a {
+    display: block;
+    position: absolute;
+    width: .3rem;
+    .icon(@white);
+    padding-left: .1rem;
+    text-decoration: none;
+  }
+  h2 {
+    text-align: center;
+    font-size: .18rem;
+  }
+}
+//头部结束
+
+//人员信息展示开始
+.nav{
+  padding-top: @head-h;
+  height: @nav-h;
+  background: url("img/nav-bg.png") no-repeat 0 -5px;
+  background-size: cover;
+  background-origin: content-box;
+  color: @white;
+  .opacity {
+    display: flex;
+    align-items: center;
+    height: @nav-h;
+    background: rgba(0,0,0,0.2);
+  }
+  .photo {
+    flex: none;
+    width: .85rem;
+    height: .85rem;
+    border-radius: 50%;
+    margin-left: @container-p;
+    background: url("img/photo.png") no-repeat center;
+    background-size: 100%;
+  }
+  .info {
+    margin-left: .20rem;
+    div:first-of-type {
+      line-height: .18rem;
+      font-size: .18rem;
+    }
+    .age {
+      padding-left: .15rem;
+      font-size: .14rem;
+    }
+    div:last-of-type {
+      margin-top: .12rem;
+      line-height: .12rem;
+      font-size: .12rem;
+      .position-logo {
+        .icon(@blue);
+      }
+    }
+    .address {
+      padding-left: .07rem;
+    }
+  }
+}
+//人员信息展示结束
+
+//详细信息开始
+@footer-h: .4rem;
+.content {
+  font-size: .16rem;
+  padding-bottom: @footer-h + .4;
+  h3 {
+    display: block;
+    font-size: .16rem;
+    border-left: 2px solid #5fc0cd;
+    margin: @container-p;
+    padding-left: @container-p;
+    font-weight: bold;
+  }
+  @content-border:1px solid #e1e5e7;
+  .demand {
+    display: flex;
+    margin-left: @container-p;
+    padding: @container-p;
+    border-top:@content-border;
+    .live {
+      padding-right: .09rem;
+      border-right: @content-border;
+      margin-right: .09rem;
+    }
+    .demand-list {
+      color: #999999;
+      padding-right: .13rem;
+      border-right: @content-border;
+      margin-right: .13rem;
+      align-self: center;
+    }
+    .price {
+      color: #ff0000;
+    }
+    &:last-of-type {
+      margin-left: 0;
+    }
+    .self-intro {
+      flex: 1;
+      font-size: .14rem;
+    }
+  }
+  .live-eat {
+    margin-left: 0;
+    padding-left: @container-p*2;
+    div span {
+      .icon(#ff0000);
+      font-size: .14rem;
+    }
+  }
+}
+//详细信息结束
+
+//底部按钮开始
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: .1rem .2rem .2rem .2rem;
+  background: @white;
+  a {
+    display: block;
+    flex: 1;
+    height: @footer-h;
+    font-size: .17rem;
+    line-height: .4rem;
+    border: 2px solid #5fc0cd;
+    outline: none;
+    border-radius: .06rem;
+    margin-right: .06rem;
+    color: #5fc0cd;
+    background: #ffffff;
+    &:hover {
+      color: #ffffff;
+      background: #5fc0cd;
+    }
+  }
+}
+//底部按钮结束
