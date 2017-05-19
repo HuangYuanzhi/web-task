@@ -1,0 +1,171 @@
+@charset "utf-8";
+/*reset 开始*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 625%;
+}
+body {
+  font-size: .12rem;
+}
+/*reset 结束*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-font {
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #29bde0;
+  height: 0.44rem;
+}
+.header a {
+  display: block;
+  padding: 0 .1rem;
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: .2rem;
+  line-height: 0.44rem;
+}
+.header .left-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .right-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header p {
+  width: 100%;
+  font-size: .17rem;
+  line-height: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+body {
+  background: #29bde0;
+}
+.content {
+  padding-top: 0.54rem;
+}
+.content .result {
+  width: 74.68%;
+  margin: 0 auto;
+}
+.content .result .win-img {
+  width: 1.76rem;
+  margin: 0 auto;
+  font-size: .24rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: .65rem;
+  padding-bottom: .1rem;
+  color: #fff;
+  background: url("../task13-3/img/win-img.png") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.content .result .result-text {
+  padding-top: .1rem;
+  font-size: .16rem;
+  color: #ffc865;
+  font-weight: bold;
+}
+.content .result .result-info {
+  font-size: .13rem;
+  color: #fff;
+  font-weight: bold;
+  padding-top: .3rem;
+}
+.content .result .result-info p {
+  margin-bottom: .07rem;
+}
+.content .result .result-info > div {
+  margin-bottom: .07rem;
+}
+.content .result .result-info > div .role:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .07rem;
+}
+.content .result .result-info > div .role:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+.content .result .result-info > div .role:nth-of-type(2) span:last-of-type {
+  width: .58rem;
+}
+.content .game-log {
+  background: #fff;
+  padding-bottom: 0.65rem;
+}
+.content .game-log .time-line {
+  position: relative;
+  font-size: .13rem;
+  color: #a6a6a6;
+  margin: 0 auto;
+  padding-left: 12.66%;
+  padding-right: 12.66%;
+  padding-bottom: .1rem;
+  border-bottom: 1px solid #ddd;
+}
+.content .game-log .time-line .title {
+  font-size: .15rem;
+  color: #000;
+  padding-bottom: .1rem;
+}
+.content .game-log .time-line span {
+  position: absolute;
+  top: 0;
+  right: 12.66%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 189, 224, 0.48);
+  display: flex;
+  height: 0.65rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: .1rem;
+  padding-right: .1rem;
+}
+.footer a {
+  display: inline-block;
+  height: .43rem;
+  width: 1.35rem;
+  border-radius: .03rem;
+  font-size: .2rem;
+  line-height: .43rem;
+  text-align: center;
+  color: #ffffff;
+}
+.footer a:nth-of-type(1) {
+  background: #f66f6f;
+}
+.footer a:nth-of-type(2) {
+  background: #fbb435;
+}

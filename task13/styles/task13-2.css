@@ -1,0 +1,201 @@
+@charset "utf-8";
+/*reset 开始*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 625%;
+}
+body {
+  font-size: .12rem;
+}
+/*reset 结束*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-font {
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #29bde0;
+  height: 0.44rem;
+}
+.header a {
+  display: block;
+  padding: 0 .1rem;
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: .2rem;
+  line-height: 0.44rem;
+}
+.header .left-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .right-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header p {
+  width: 100%;
+  font-size: .17rem;
+  line-height: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+body {
+  background: #29bde0;
+}
+.content {
+  padding-top: 0.44rem;
+  padding-bottom: 0.8rem;
+}
+.content .vote-title {
+  height: .75rem;
+}
+.content .vote-title .vote-title-top {
+  position: relative;
+  height: .41rem;
+  line-height: .41rem;
+  background: #b9e9f5;
+  font-size: .13rem;
+  padding-left: .23rem;
+}
+.content .vote-title .vote-title-top .audio-btn {
+  position: absolute;
+  top: .07rem;
+  right: .07rem;
+  width: .26rem;
+  height: .26rem;
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  line-height: .26rem;
+  font-size: .2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: .13rem;
+  background: #fbb435;
+}
+.content .vote-title .vote-title-bottom {
+  position: relative;
+  height: .34rem;
+  line-height: .34rem;
+  font-size: .12rem;
+  color: #fff;
+  padding-left: .35rem;
+}
+.content .vote-title .vote-title-bottom .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: .35rem;
+  border-top: .06rem solid #b9e9f5;
+  border-left: .03rem solid #29bde0;
+  border-right: .03rem solid #29bde0;
+}
+.content .vote-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .vote-list .vote-list-item {
+  position: relative;
+  width: 21.3%;
+  padding: 4% 6% 9% 6%;
+}
+.content .vote-list .vote-list-item .pic {
+  border: 2px solid #fff;
+  text-align: center;
+}
+.content .vote-list .vote-list-item .pic .pic-top {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  font-size: .15rem;
+  background: #f5c97b;
+}
+.content .vote-list .vote-list-item .pic .pic-bottom {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: .11rem;
+  background: #83b09a;
+  color: #fff;
+}
+.content .vote-list .vote-list-item:hover .list-item-choose div {
+  display: block;
+}
+.content .vote-list .list-item-choose {
+  position: absolute;
+  bottom: 0;
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+}
+.content .vote-list .list-item-choose div {
+  display: none;
+  width: 23%;
+  padding-top: 23%;
+}
+.content .vote-list .list-item-choose div:nth-of-type(1) {
+  background: url("../task13-2/img/choose1.png") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.content .vote-list .list-item-choose div:nth-of-type(2) {
+  background: url("../task13-2/img/choose2.png") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.content .vote-list .list-item-choose div:nth-of-type(3) {
+  background: url("../task13-2/img/choose3.png") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.content .vote-list .list-item-choose div:nth-of-type(4) {
+  background: url("../task13-2/img/choose4.png") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+/*页面底部*/
+.footer {
+  height: 0.8rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #29bde0;
+  padding-top: .2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footer .submit {
+  display: block;
+  width: 76.56%;
+  height: .45rem;
+  font-size: .2rem;
+  line-height: .45rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: #fbb435;
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+//重置样式及公共样式引入
+@import "../styles/task13-reset&base";
+
+//页面独有样式
+body{
+  background: @header-c;
+}
+@footer-h: .8rem;
+
+.content{
+  padding-top: @header-h;
+  padding-bottom: @footer-h;
+  //投票标题开始
+  .vote-title{
+    height: .75rem;
+    .vote-title-top{
+      position: relative;
+      height: .41rem;
+      line-height: .41rem;
+      background: #b9e9f5;
+      font-size: .13rem;
+      padding-left: .23rem;
+      .audio-btn{
+        position: absolute;
+        top: .07rem;
+        right: .07rem;
+        width: .26rem;
+        height: .26rem;
+        .icon-font;
+        line-height: .26rem;
+        font-size: .2rem;
+        text-align: center;
+        color: #fff;
+        border-radius: .13rem;
+        background: #fbb435;
+      }
+    }
+
+    .vote-title-bottom{
+      position: relative;
+      height: .34rem;
+      line-height: .34rem;
+      font-size: .12rem;
+      color: #fff;
+      padding-left: .35rem;
+      .icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: .35rem;
+        border-top: .06rem solid #b9e9f5;
+        border-left: .03rem solid #29bde0;
+        border-right: .03rem solid #29bde0;
+      }
+    }
+  }
+  //投票标题结束
+
+  //投票列表开始
+  .vote-list{
+    display: flex;
+    flex-wrap: wrap;
+    .vote-list-item{
+      position: relative;
+      width: 21.3%;
+      padding: 4% 6% 9% 6%;
+      .pic{
+        border: 2px solid #fff;
+        text-align: center;
+        .pic-top{
+          padding-top: 30%;
+          padding-bottom: 30%;
+          font-size: .15rem;
+          background: #f5c97b;
+        }
+        .pic-bottom{
+          padding-top: 5%;
+          padding-bottom: 5%;
+          font-size: .11rem;
+          background: #83b09a;
+          color: #fff;
+        }
+      }
+      &:hover .list-item-choose div{
+        display: block;
+      }
+    }
+    .list-item-choose{
+      position: absolute;
+      bottom:0;
+      width: 64%;
+      display: flex;
+      justify-content:space-between;
+      div{
+        .bg-img(@url){
+          background: @url no-repeat center;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+        display: none;
+        width: 23%;
+        padding-top: 23%;
+        &:nth-of-type(1){
+          .bg-img(url("../task13-2/img/choose1.png"));
+        }
+        &:nth-of-type(2){
+          .bg-img(url("../task13-2/img/choose2.png"));
+        }
+        &:nth-of-type(3){
+          .bg-img(url("../task13-2/img/choose3.png"));
+        }
+        &:nth-of-type(4){
+          .bg-img(url("../task13-2/img/choose4.png"));
+        }
+      }
+    }
+  }
+  //投票列表结束
+
+}
+/*页面底部*/
+
+.footer{
+  height: @footer-h;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #29bde0;
+  padding-top: .2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .submit{
+    display: block;
+    width: 76.56%;
+    height: .45rem;
+    font-size: .2rem;
+    line-height: .45rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    background: #fbb435;
+  }
+}

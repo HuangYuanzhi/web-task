@@ -1,0 +1,116 @@
+@charset "utf-8";
+//重置样式及公共样式引入
+@import "../styles/task13-reset&base";
+
+//页面独有样式
+body{
+  background: @header-c;
+}
+@footer-h: .65rem;
+.content {
+  padding-top: @header-h+.1;
+  @content-w: 74.68%;
+  .result{
+    width: @content-w;
+    margin: 0 auto;
+    .win-img{
+      width: 1.76rem;
+      margin: 0 auto;
+      font-size: .24rem;
+      font-weight: bold;
+      text-align: center;
+      padding-top: .65rem;
+      padding-bottom: .1rem;
+      color: #fff;
+      background: url("../task13-3/img/win-img.png") no-repeat center;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+    }
+    .result-text{
+      padding-top:.1rem;
+      font-size: .16rem;
+      color: #ffc865;
+      font-weight:bold;
+    }
+    .result-info{
+      font-size: .13rem;
+      color: #fff;
+      font-weight:bold;
+      padding-top:.3rem;
+      p{
+        margin-bottom: .07rem;
+      }
+      &>div{
+        margin-bottom: .07rem;
+        .role:nth-of-type(1){
+          display: flex;
+          justify-content:space-between;
+          margin-bottom: .07rem;
+        }
+        .role:nth-of-type(2){
+          display: flex;
+          justify-content:space-between;
+          span:last-of-type{
+            width:.58rem;
+          }
+        }
+      }
+    }
+  }
+
+  .game-log{
+    background: #fff;
+    padding-bottom: @footer-h;
+    .time-line{
+      position: relative;
+      font-size: .13rem;
+      color: #a6a6a6;
+      margin: 0 auto;
+      padding-left: (100%-@content-w)/2;
+      padding-right: (100%-@content-w)/2;
+      padding-bottom: .1rem;
+      border-bottom:1px solid #ddd;
+      .title{
+        font-size:.15rem;
+        color: #000;
+        padding-bottom: .1rem;
+      }
+      span{
+        position: absolute;
+        top:0;
+        right: (100%-@content-w)/2;
+      }
+    }
+  }
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 189, 224, 0.48);
+  display: flex;
+  height: @footer-h;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: .1rem;
+  padding-right: .1rem;
+  a {
+    display: inline-block;
+    height: .43rem;
+    width: 1.35rem;
+    border-radius: .03rem;
+    font-size: .2rem;
+    line-height: .43rem;
+    text-align: center;
+    color: #ffffff;
+    &:nth-of-type(1) {
+      background: #f66f6f;
+    }
+    &:nth-of-type(2) {
+      background: #fbb435;
+    }
+  }
+}
