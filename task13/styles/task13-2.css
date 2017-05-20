@@ -66,6 +66,16 @@ body {
 body {
   background: #29bde0;
 }
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .content {
   padding-top: 0.44rem;
   padding-bottom: 0.8rem;
@@ -128,17 +138,37 @@ body {
   text-align: center;
 }
 .content .vote-list .vote-list-item .pic .pic-top {
-  padding-top: 30%;
-  padding-bottom: 30%;
+  position: relative;
+  padding-top: 78.5%;
   font-size: .15rem;
   background: #f5c97b;
 }
+.content .vote-list .vote-list-item .pic .pic-top p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .content .vote-list .vote-list-item .pic .pic-bottom {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  position: relative;
+  padding-top: 21.5%;
   font-size: .11rem;
   background: #83b09a;
   color: #fff;
+}
+.content .vote-list .vote-list-item .pic .pic-bottom p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .content .vote-list .vote-list-item:hover .list-item-choose div {
   display: block;
