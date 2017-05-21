@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+//重置样式及公共样式引入
+@import "task14-reset&base";
+
+//页面独有开始
+
+
+
+//轮播图开始
+.banner{
+  position: relative;
+  overflow: hidden;
+  ul{
+    width: 500%;
+    font-size: 0;
+    li{
+      display: inline-block;
+      width: 20%;
+      img{
+        display: block;
+        max-width:100%;
+        max-height: 100%;
+      }
+    }
+    -webkit-animation: banner 12s normal infinite;
+    -o-animation: banner 12s normal infinite;
+    animation: banner 12s normal infinite;
+  }
+  @keyframes banner{
+    0%{
+      margin-left: 0;
+    }
+    25%{
+      margin-left: -100%;
+    }
+    50%{
+      margin-left: -200%;
+    }
+    75%{
+      margin-left: -300%;
+    }
+    100%{
+      margin-left: -400%;
+    }
+  }
+
+  //指示点动画开始
+  .carousel-indicators{
+    position: absolute;
+    bottom: .2rem;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content:space-around;
+    width: 1rem;
+    //指示点动画模块
+    .point-animation(@sec){
+      -webkit-animation: ind1 12s @sec normal infinite;
+      -o-animation: ind1 12s @sec normal infinite;
+      animation: ind1 12s @sec normal infinite;
+    }
+    .from-to{
+      from{
+        background: @theme-c;
+      }
+      to{
+        background: #fff;
+      }
+    }
+    //指示点动画模块
+
+    div{
+      width: .1rem;
+      height: .1rem;
+      background: @theme-c;
+      border-radius: 50%;
+      &:nth-of-type(1){
+        .point-animation(0s);
+      }
+      &:nth-of-type(2){
+        .point-animation(3s);
+      }
+      &:nth-of-type(3){
+        .point-animation(6s);
+      }
+      &:nth-of-type(4){
+        .point-animation(9s);
+      }
+    }
+    @keyframes ind1{
+      .from-to;
+    }
+    @keyframes ind2{
+      .from-to;
+    }
+    @keyframes ind3{
+      .from-to;
+    }
+    @keyframes ind4{
+      .from-to;
+    }
+  }
+  //指示点动画结束
+
+  //轮播图左右控制按钮开始
+  a{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    width: 15%;
+    span{
+      text-align: center;
+      font-size: .8rem;
+      color: rgba(255,255,255,48%);
+      @media (max-width: 768px){
+        font-size: .4rem;
+      }
+    }
+  }
+  //控制按钮背景色模块
+  .banner-btn-bg(@dir){
+    background: -webkit-linear-gradient(@dir,transparent,rgba(0,0,0,80%));
+  }
+
+  .left{
+    left: 0;
+    top: 0;
+    &:hover{
+      .banner-btn-bg(right);
+    }
+  }
+  .right{
+    right: 0;
+    top: 0;
+    &:hover{
+      .banner-btn-bg(left);
+    }
+  }
+  //轮播图左右控制按钮结束
+}
+@main-font-c: #999;
+@sub-font-c: #9d9d9d;
+//main-top开始
+.main {
+  padding-top: .3rem;
+  .main-top{
+    display: flex;
+    padding-bottom: .3rem;
+    @media (max-width:768px){
+      display: block;
+    }
+  }
+  .main-top-item {
+    width: 25%;
+    text-align: center;
+    padding-top: .2rem;
+    @media (max-width:768px){
+      width: 100%;
+    }
+    .img-wrapper {
+      position: relative;
+      height: .62rem;
+      margin-bottom: .3rem;
+    }
+    .item-img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+    }
+    .item-tt {
+      padding-bottom: .2rem;
+      text-align: center;
+      font-size: .18rem;
+      font-weight: bold;
+    }
+    .item-txt {
+      text-align: left;
+      font-size: .16rem;
+      color: @sub-font-c;
+    }
+  }
+  .slide {
+    border-right: 2px dashed @sub-font-c;
+    @media (max-width: 768px) {
+      border: none;
+    }
+  }
+  .counts {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    @media (max-width: 768px) {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+    .man-icon {
+      display: inline-block;
+      width: .13rem;
+      height: .13rem;
+      background: url("../task14-1/img/public.png") no-repeat 0 -.47rem;
+    }
+    .user-member {
+      color: @theme-c;
+    }
+    p {
+      color: @sub-font-c;
+    }
+  }
+
+  //如何学习开始
+
+  .middle-hd {
+    .h-lh(1rem);
+    font-size: .18rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .learn {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    .step {
+      width: .5rem;
+      .h-lh(.5rem);
+      border-radius: .25rem;
+      background: #fff;
+      box-shadow: -1px 1px 2px @sub-font-c;
+      color: @theme-c;
+      font-size:.18rem;
+      text-align: center;
+
+    }
+    .step-txt {
+      flex: 1;
+      align-self: center;
+      padding-left: .1rem;
+      font-size: .14rem;
+      color: @main-font-c;
+    }
+    .arrow-icon{
+      width: .28rem;
+      height: .24rem;
+      background: url("../task14-1/img/public.png") no-repeat -57px -34px;
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
+  }
+  .learn-step {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    @media (max-width:992px){
+      width: 50%;
+    }
+    @media (max-width:768px){
+      width: 100%;
+    }
+  }
+
+
+  ///学员展示开始
+  .show-wall-hd {
+    .h-lh(1rem);
+    font-size: .18rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .show-wall-list{
+    display: flex;
+    flex-wrap: wrap;
+    .show-item-wrapper{
+      width:25%;
+      @media (max-width: 992px){
+        width: 50%;
+      }
+      @media (max-width: 768px){
+        width: 100%;
+      }
+    }
+  }
+
+
+  .show-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .2rem;
+    margin-bottom: .2rem;
+    background: #fff;
+    .box-s;
+    .photo{
+      float: none;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+    }
+    .photo1 {
+      background: url("../task14-1/img/member1.jpg") no-repeat center;
+    }
+    .photo2 {
+      background: url("../task14-1/img/member2.jpg") no-repeat center;
+    }
+    .photo3 {
+      background: url("../task14-1/img/member3.jpg") no-repeat center;
+    }
+    .photo4 {
+      background: url("../task14-1/img/member4.jpg") no-repeat center;
+    }
+    .name {
+      flex: auto;
+      font-size: .18rem;
+      font-weight: bold;
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+
+    }
+    .intro {
+      font-size: .16rem;
+      color: @main-font-c;
+    }
+  }
+  .page-dot {
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    text-align: center;
+    .dot {
+      display: inline-block;
+      width: .1rem;
+      height: .1rem;
+      border-radius: 50%;
+      background: #fff;
+      .box-s;
+    }
+    .active {
+      background: @theme-c;
+    }
+  }
+
+
+  //战略合作伙伴开始
+  .partnership-hd {
+    .h-lh(1rem);
+    font-size: .18rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .partnership-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .partner-wrapper {
+    display: block;
+    position: relative;
+    width: 20%;
+    margin-top: .05rem;
+    overflow: hidden;
+    background: #fff;
+    img{
+      max-width: 100%;
+    }
+    &:hover {
+      .box-s;
+    }
+    @media (max-width:992px){
+      width: 33.3%;
+    }
+    @media (max-width:678px){
+      width: 100%;
+    }
+    .partner{
+      text-align: center;
+    }
+  }
+}
+
+//友情链接开始
+
+.friend-bg-wrapper{
+  background: #fff;
+  margin-top: .9rem;
+  padding-bottom: .1rem;
+  .friend-link-hd {
+    .h-lh(.5rem);
+    font-size: .18rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .link-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding:0;
+    .list-item {
+      position: relative;
+      display: flex;
+      .h-lh(.36rem);
+      width: 10%;
+      @media (max-width:768px){
+        width: 20%;
+      }
+      @media (max-width:425px){
+        width: 33.3%;
+      }
+      a {
+        display: block;
+        padding-left: .1rem;
+        font-size: .14rem;
+        color: @main-font-c;
+        &:hover{
+          text-decoration: none;
+          .box-z-b;
+          border-bottom: 2px solid @theme-c;
+        }
+      }
+      .spot{
+        position: absolute;
+        top: .16rem;
+        left: 0;
+        display: block;
+        width: .04rem;
+        height: .04rem;
+        background: @main-font-c;
+        border-radius: .02rem;
+      }
+    }
+  }
+}
+
+
+
