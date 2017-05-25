@@ -23,17 +23,18 @@
 
 <!--页面导航开始-->
 <div class="page-nav">
-    <span class="nav-btn">&#xf05e</span>
-    <div class="nav-wrapper container">
+    <span class="nav-btn open" id="nav_btn_open">&#xf05e</span>
+    <span class="nav-btn close" id="nav_btn_close">&#xf05e</span>
+    <div class="nav-wrapper container" id="nav_wrapper">
         <a class="navbar-brand" href="#">
             <img src="img/jnshu-logo.png" alt="ppt-logo">
         </a>
-        <div class="collapse row" id="example-navbar-collapse">
+        <div class="collapse row" id="collapse">
             <ul class="nav navbar-nav ">
-                <li role="presentation" class="active"><a href="http://119.10.57.69:880/jnshu3937/task14/task14-1/task14-1.html">首页</a></li>
-                <li role="presentation" ><a href="http://119.10.57.69:880/jnshu3937/task14/task14-2/task14-2.html">职业</a></li>
-                <li role="presentation" ><a href="http://119.10.57.69:880/jnshu3937/task14/task14-3/task14-3.html">推荐</a></li>
-                <li role="presentation" ><a href="#">关于</a></li>
+                <li role="presentation" class="nav_li"><a class="nav_item" href="http://119.10.57.69:880/jnshu3937/task14/task14-1/task14-1.html">首页</a></li>
+                <li role="presentation" class="nav_li"><a class="nav_item" href="http://119.10.57.69:880/jnshu3937/task14/task14-2/task14-2.html">职业</a></li>
+                <li role="presentation" class="nav_li"><a class="nav_item" href="http://119.10.57.69:880/jnshu3937/task14/task14-3/task14-3.html">推荐</a></li>
+                <li role="presentation" class="nav_li"><a class="nav_item" href="#">关于</a></li>
              </ul>
         </div>
     </div>
@@ -229,34 +230,35 @@
         </div>
     </div>
     <div class=" row">
-        <div class="partnership-item ">
-            <a class="partner-wrapper col" href="#">
-                <div class="partner">
-                    <img src="img/ali.png" alt="阿里巴巴">
-                </div>
-            </a>
-            <a class="partner-wrapper col" href="#">
-                <div class="partner ">
-                    <img src="img/jinsan.png" alt="金山云">
-                </div>
-            </a>
-            <a class="partner-wrapper col" href="#">
-                <div class="partner ">
-                    <img src="img/huanxin.png" alt="环信">
-                </div>
-            </a>
-            <a class="partner-wrapper col" href="#">
-                <div class="partner ">
-                    <img src="img/ronglian.png" alt="容联">
-                </div>
-            </a>
-            <a class="partner-wrapper col" href="#">
-                <div class="partner ">
-                    <img src="img/qiniu.png" alt="七牛">
-                </div>
-            </a>
+        <div class="col">
+            <div class="partnership-item ">
+                <a class="partner-wrapper " href="#">
+                    <div class="partner">
+                        <img src="img/ali.png" alt="阿里巴巴">
+                    </div>
+                </a>
+                <a class="partner-wrapper " href="#">
+                    <div class="partner ">
+                        <img src="img/jinsan.png" alt="金山云">
+                    </div>
+                </a>
+                <a class="partner-wrapper " href="#">
+                    <div class="partner ">
+                        <img src="img/huanxin.png" alt="环信">
+                    </div>
+                </a>
+                <a class="partner-wrapper " href="#">
+                    <div class="partner ">
+                        <img src="img/ronglian.png" alt="容联">
+                    </div>
+                </a>
+                <a class="partner-wrapper " href="#">
+                    <div class="partner ">
+                        <img src="img/qiniu.png" alt="七牛">
+                    </div>
+                </a>
+            </div>
         </div>
-
     </div>
     <!--战略合作伙伴结束-->
 </div>
@@ -381,5 +383,7 @@
         </div>
 </div>
 <!--页尾结束-->
+
+<script src="../js/task14.js"></script>
 </body>
 </html>

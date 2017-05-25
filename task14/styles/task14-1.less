@@ -360,19 +360,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    background: #fff;
   }
   .partner-wrapper {
     display: block;
     position: relative;
     width: 20%;
-    margin-top: .05rem;
     overflow: hidden;
-    background: #fff;
+
     img{
       max-width: 100%;
     }
     &:hover {
       .box-s;
+      z-index:998;
     }
     @media (max-width:992px){
       width: 33.3%;

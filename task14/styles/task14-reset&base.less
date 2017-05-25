@@ -135,8 +135,8 @@ body{
   position: relative;
   color: #fff;
   background: @theme-c;
-  @media (max-width:768px){
-  }
+  overflow: hidden;
+
   .navbar-brand {
     position: absolute;
     top: 24px;
@@ -156,36 +156,35 @@ body{
     font-family: "iconfont";
     font-size: .2rem;
     display: none;
-    z-index:9;
     @media (max-width:768px){
       position: absolute;
       top:0;
       right: @content-padding;
-      display: block;
       width: .5rem;
       text-align: center;
       line-height: @nav-sm-h;
-      &:hover+div{
-        height: (@nav-li-sm-h*4)+@nav-sm-h;
-        .collapse{
-          margin: 0;
-        }
-        li{
-          display: block;
-          width: 100%;
-          float: none;
-          a{
-            .h-lh(@nav-li-sm-h);
-          }
-        }
-      }
+    }
+  }
+
+  .open{
+    z-index: 999;
+    @media (max-width:768px){
+      display: block;
+    }
+  }
+  .close{
+    z-index:-1;
+    @media(min-width:769px){
+      display: none !important;
     }
   }
   .nav-wrapper{
     position: relative;
-    height: @nav-h;
     @media (max-width:768px){
       height: @nav-sm-h;
+    }
+    @media (min-width:769px){
+      height: @nav-h !important;
     }
   }
 
@@ -260,9 +259,12 @@ body{
   }
   .footer-item {
     padding-top: .4rem;
-    width:25%;
+    width:30%;
     &:last-of-type{
-      width:50%;
+      flex:1;
+    }
+    @media (max-width:992px){
+      width: 33.3%;
     }
     @media (max-width:768px){
       width: 100%;

@@ -118,6 +118,7 @@ body {
   position: relative;
   color: #fff;
   background: #29b078;
+  overflow: hidden;
 }
 .page-nav .navbar-brand {
   position: absolute;
@@ -139,41 +140,44 @@ body {
   font-family: "iconfont";
   font-size: .2rem;
   display: none;
-  z-index: 9;
 }
 @media (max-width: 768px) {
   .page-nav .nav-btn {
     position: absolute;
     top: 0;
     right: 15px;
-    display: block;
     width: .5rem;
     text-align: center;
     line-height: 0.6rem;
   }
-  .page-nav .nav-btn:hover + div {
-    height: 2.6rem;
-  }
-  .page-nav .nav-btn:hover + div .collapse {
-    margin: 0;
-  }
-  .page-nav .nav-btn:hover + div li {
+}
+.page-nav .open {
+  z-index: 999;
+}
+@media (max-width: 768px) {
+  .page-nav .open {
     display: block;
-    width: 100%;
-    float: none;
   }
-  .page-nav .nav-btn:hover + div li a {
-    height: 0.5rem;
-    line-height: 0.5rem;
+}
+.page-nav .close {
+  z-index: -1;
+}
+@media (min-width: 769px) {
+  .page-nav .close {
+    display: none !important;
   }
 }
 .page-nav .nav-wrapper {
   position: relative;
-  height: 1rem;
 }
 @media (max-width: 768px) {
   .page-nav .nav-wrapper {
     height: 0.6rem;
+  }
+}
+@media (min-width: 769px) {
+  .page-nav .nav-wrapper {
+    height: 1rem !important;
   }
 }
 .page-nav .collapse {
@@ -252,10 +256,15 @@ body {
 }
 .footer .footer-item {
   padding-top: .4rem;
-  width: 25%;
+  width: 30%;
 }
 .footer .footer-item:last-of-type {
-  width: 50%;
+  flex: 1;
+}
+@media (max-width: 992px) {
+  .footer .footer-item {
+    width: 33.3%;
+  }
 }
 @media (max-width: 768px) {
   .footer .footer-item {
