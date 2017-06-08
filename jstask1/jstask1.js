@@ -67,8 +67,10 @@ function end() {
     }
 }
 oBtn1.onclick=function () {
-    start()
+    start();
+    oBtn1.disabled="disabled";
 };
 oBtn2.onclick=function () {
-    end()
+    end();
+    oBtn1.disabled=false;
 };
