@@ -57,18 +57,18 @@ function start() {
         start();
     }
 }
-    function end() {
-        // 取消延时
-        clearInterval(stop);
-        var re = document.getElementsByClassName("son");
-        var i;
-        for (i = 0; i < 9; i++) {
-            re[i].style.background = "#ffa600";
-        }
+function end() {
+    // 取消延时
+    clearInterval(stop);
+    var re = document.getElementsByClassName("son");
+    var i;
+    for (i = 0; i < 9; i++) {
+        re[i].style.background = "#ffa600";
     }
-    oBtn1.onclick=function () {
-        start()
-    };
-    oBtn2.onclick=function () {
-        end()
-    };
+}
+oBtn1.onclick=function () {
+    start()
+};
+oBtn2.onclick=function () {
+    end()
+};
