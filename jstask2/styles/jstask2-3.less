@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+//重置样式及公共样式引入
+@import "../styles/jstask2-reset&base";
+
+//页面独有样式
+
+body {
+  background: #29bde0;
+}
+//头部
+.header{
+  border-bottom:1px solid #74d4eb;
+  .left-btn{
+    font-size: .3rem;
+  }
+  .right-btn{
+    font-size: .3rem;
+    line-height: .4rem;
+  }
+}
+
+.main{
+  padding-top: .44rem;
+  .content{
+    //border-top: 1px solid #74d4eb;
+    .card-wrapper{
+      position: relative;
+      width: 70%;
+      padding-top: 100%;
+      margin: .42rem auto;
+      background: #ffedc5;
+      border: 3px solid #ffffff;
+      box-sizing: border-box;
+    }
+    .number-wrapper{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 16%;
+      padding-top: 16%;
+      border-radius: 50%;
+      background: #ffffff;
+      transform: translate(-50%,-50%);
+      border: 2px solid #ffedc5;
+
+    }
+    .number{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: .2rem;
+      font-weight: bold;
+      color: #f56b81;
+    }
+    .before{
+      display: block;
+      //position: relative;
+      .card-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 67%;
+        height: 45.6%;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+
+    .after{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .card-img{
+        width: 50%;
+        margin: 12% auto 5% auto;
+        img{
+          max-width: 100%;
+        }
+      }
+      .role{
+        font-size: .2rem;
+        color: #29bde0;
+        text-align: center;
+      }
+      .word{
+        font-size: .2rem;
+        color: #f56b81;
+        text-align: center;
+        margin-top: .08rem;
+        margin-bottom: .16rem;
+      }
+      .tips{
+        font-size: .13rem;
+        color: #fca000;
+        padding-top: .16rem;
+        padding-right: .15rem;
+        padding-left: .15rem;
+        border-top: 1px solid #ffffff;
+      }
+    }
+
+    button{
+      position: fixed;
+      bottom: .3rem;
+      left: 11.88%;
+      height: .44rem;
+      width: 76.25%;
+      background: #fbb435;
+      outline: none;
+      border: none;
+      color: #ffffff;
+      font-size: .2rem;
+    }
+    .next{
+      display: none;
+    }
+  }
+}

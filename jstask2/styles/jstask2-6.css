@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*reset 开始*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 625%;
+}
+body {
+  font-size: .12rem;
+}
+/*reset 结束*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-font {
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #29bde0;
+  height: 0.44rem;
+}
+.header a {
+  display: block;
+  padding: 0 .1rem;
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: .2rem;
+  line-height: 0.44rem;
+}
+.header .left-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .right-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header p {
+  width: 100%;
+  font-size: .17rem;
+  line-height: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+body {
+  background: #29bde0;
+}
+.header {
+  border-bottom: 1px solid #74d4eb;
+}
+.header a {
+  text-decoration: none;
+}
+.header .right-btn {
+  font-size: .3rem;
+  line-height: .4rem;
+}
+.main {
+  padding-top: .5rem;
+  padding-bottom: .8rem;
+}
+.main .main-top {
+  position: relative;
+}
+.main .main-top .tips {
+  padding-left: 6.0416%;
+  font-size: .13rem;
+  line-height: .4rem;
+  background: #b9e9f5;
+}
+.main .main-top .option {
+  padding-left: 6.0416%;
+  margin-top: .15rem;
+  margin-bottom: .15rem;
+  font-size: .12rem;
+  color: #ffffff;
+  line-height: .12rem;
+}
+.main .main-top .triangle {
+  position: absolute;
+  top: .4rem;
+  left: 6.0416%;
+  border-top: .15rem solid #b9e9f5;
+  border-left: .075rem solid transparent;
+  border-right: .075rem solid transparent;
+}
+.main .main-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .role-box {
+  position: relative;
+  margin-left: 6.6%;
+  margin-right: 6.6%;
+  width: 20%;
+  padding-bottom: 10%;
+}
+.main .role-box:hover .knife {
+  display: block;
+}
+.main .role-box .knife {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+  width: 35%;
+  padding-top: 35%;
+  background: url("../images/knife.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.main .role-wrapper {
+  position: relative;
+  padding-top: 95%;
+  background: #f5c97b;
+  border: .02rem solid #ffffff;
+  box-sizing: content-box;
+  text-align: center;
+}
+.main .role-wrapper .role {
+  position: absolute;
+  top: 0;
+  height: 72%;
+  width: 100%;
+  text-align: center;
+  padding-top: 25%;
+  font-size: .15rem;
+}
+.main .role-wrapper .number {
+  position: absolute;
+  bottom: 0;
+  height: 28%;
+  width: 100%;
+  text-align: center;
+  font-size: .11rem;
+  background: #83b09a;
+  color: #ffffff;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #29bde0;
+  padding-bottom: .3rem;
+}
+.footer button {
+  display: block;
+  margin: 0 auto;
+  height: .44rem;
+  width: 76.25%;
+  background: #fbb435;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: .2rem;
+}

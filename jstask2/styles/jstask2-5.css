@@ -1,0 +1,251 @@
+@charset "utf-8";
+/*reset 开始*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 625%;
+}
+body {
+  font-size: .12rem;
+}
+/*reset 结束*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-font {
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #29bde0;
+  height: 0.44rem;
+}
+.header a {
+  display: block;
+  padding: 0 .1rem;
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: .2rem;
+  line-height: 0.44rem;
+}
+.header .left-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .right-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header p {
+  width: 100%;
+  font-size: .17rem;
+  line-height: 0.44rem;
+  color: #fff;
+  text-align: center;
+}
+body {
+  background: #f0f0f0;
+}
+.header {
+  border-bottom: 1px solid #74d4eb;
+}
+.header a {
+  text-decoration: none;
+}
+.header .left-btn {
+  font-size: .3rem;
+}
+.header .right-btn {
+  font-size: .3rem;
+  line-height: .4rem;
+}
+.main {
+  padding-top: .44rem;
+}
+.main .flow_wrapper {
+  position: relative;
+  padding: .1rem .05rem;
+}
+.main .log-tt {
+  position: relative;
+  height: .5rem;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-bottom: none;
+  font-size: .15rem;
+  color: #29bde0;
+  font-weight: bold;
+  line-height: .5rem;
+  text-align: center;
+}
+.main .log-detail {
+  font-size: .14rem;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-top: none;
+  padding-bottom: .1rem;
+  margin-bottom: .1rem;
+}
+.main .day-wrapper {
+  position: relative;
+}
+.main .day {
+  position: relative;
+  height: .5rem;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  font-size: .15rem;
+  color: #29bde0;
+  font-weight: bold;
+  line-height: .5rem;
+  text-align: center;
+}
+.main .t_triangle {
+  position: absolute;
+  top: .35rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: .3rem;
+  height: .3rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: .2rem solid #ffffff;
+  border-left: .1rem solid transparent;
+  border-right: .1rem solid transparent;
+}
+.main .flow {
+  display: flex;
+  margin-top: .1rem;
+  padding: .3rem .25rem;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+}
+.main .left {
+  position: relative;
+  width: 20%;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+}
+.main .left .line {
+  position: absolute;
+  top: .1rem;
+  left: 50%;
+  height: 1.9rem;
+  width: .02rem;
+  background: #c9c9c9;
+}
+.main .left .moon {
+  position: absolute;
+  top: .15rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: .3rem;
+  height: .3rem;
+  text-align: center;
+  line-height: .25rem;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+  background: #ffffff;
+}
+.main .left .moon img {
+  display: inline-block;
+  width: .15rem;
+  max-width: 100%;
+}
+.main .left .sun {
+  position: absolute;
+  top: .65rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: .3rem;
+  height: .3rem;
+  text-align: center;
+  line-height: .25rem;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+  background: #ffffff;
+}
+.main .left .sun img {
+  display: inline-block;
+  width: .2rem;
+  max-width: 100%;
+}
+.main .right {
+  width: 80%;
+}
+.main .right .kill-log {
+  padding-left: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+}
+.main .right > div {
+  position: relative;
+}
+.main .right > div .l_triangle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: .2rem;
+  height: .2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: .1rem solid transparent;
+  border-top: .1rem solid transparent;
+  border-right: .2rem solid #29bde0;
+}
+.main .right > div .flow_words {
+  height: .4rem;
+  margin-left: .2rem;
+  margin-top: .1rem;
+  margin-bottom: .1rem;
+  font-size: .15rem;
+  line-height: .4rem;
+  color: #ffffff;
+  text-align: center;
+  background: #29bde0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: .15rem;
+  padding-bottom: .15rem;
+  background: rgba(41, 189, 224, 0.5);
+}
+.footer button {
+  width: 42%;
+  font-size: .2rem;
+  line-height: .4rem;
+  color: #ffffff;
+  background: #fbb435;
+  border-radius: .1rem;
+  outline: none;
+  border: none;
+}

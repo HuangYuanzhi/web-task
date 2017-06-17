@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+//重置样式及公共样式引入
+@import "../styles/jstask2-reset&base";
+
+//页面独有样式
+body{
+  background: #f0f0f0;
+}
+.border(@b-color){
+  border: 1px solid @b-color;
+}
+//主内容开始
+.content{
+  padding-top: @header-h;
+  padding-left: .15rem;
+  padding-right: .15rem;
+
+}
+//上次游戏开始
+.history{
+  position: relative;
+  margin-top: .13rem;
+  margin-bottom: .13rem;
+  background: #fff;
+  .border(#c9c9c9);
+  p{
+    height: .58rem;
+    color: #9a9a9a;
+    font-size: .17rem;
+    line-height: .58rem;
+    text-align: center;
+  }
+  .left-icon{
+    position: absolute;
+    top: .14rem;
+    right: .08rem;
+    .icon-font;
+    font-size: .3rem;
+    color: #e7e7e7;
+  }
+}
+//上次游戏结束
+
+//游戏版本开始
+.game-desk{
+  position: relative;
+  background: #fff;
+  .border(#c9c9c9);
+  .game-title{
+    height: .45rem;
+    margin-bottom: .15rem;
+    color: #fbb435;
+    font-size: .19rem;
+    line-height: .45rem;
+    text-align: center;
+    border-bottom: 1px solid #fdd793;
+  }
+  .game-version{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .version-title{
+      display: block;
+      width: 72.5%;
+      height: .68rem;
+      line-height: .68rem;
+      font-size: .16rem;
+      text-align: center;
+      color: #fff;
+      background: #69d1e9;
+    }
+    .version-describe{
+      font-size: .12rem;
+      color: #787878;
+      line-height: .4rem;
+    }
+  }
+  .switch{
+    width: .64rem;
+    margin: 0 auto;
+    .switch-point{
+      margin: .02rem;
+      display: inline-block;
+      width: .09rem;
+      height: .09rem;
+      border-radius: 50%;
+      background: #f0f0f0;
+      &:first-of-type{
+        background: #69d1e9;
+      }
+    }
+  }
+  .next-btn{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: .3rem;
+    height: .3rem;
+    text-align: center;
+    .icon-font;
+    font-size: .28rem;
+    margin-top: -.14rem;
+    color: #fbb435;
+  }
+}
+//游戏版本结束

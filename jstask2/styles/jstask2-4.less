@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+//重置样式及公共样式引入
+@import "../styles/jstask2-reset&base";
+
+//页面独有样式
+
+body {
+  background: #29bde0;
+}
+//头部
+.header{
+  border-bottom:1px solid #74d4eb;
+  a{
+    text-decoration: none;
+  }
+  .left-btn{
+    font-size: .3rem;
+  }
+  .right-btn{
+    font-size: .3rem;
+    line-height: .4rem;
+  }
+}
+.main{
+  padding-top: .8rem;
+  padding-bottom: 1rem;
+  .main-row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .role-wrapper{
+    position: relative;
+    margin-left:6.0416%;
+    margin-right:6.0416%;
+    margin-bottom:10%;
+    width: 20%;
+    padding-top: 20%;
+    background: #f5c97b;
+    border: .02rem solid #ffffff;
+    box-sizing: content-box;
+    text-align: center;
+    .role{
+      position: absolute;
+      top: 0;
+      height: 72%;
+      width: 100%;
+      text-align: center;
+      padding-top: 25%;
+      font-size: .15rem;
+    }
+    .number{
+      position: absolute;
+      bottom: 0;
+      height: 28%;
+      width: 100%;
+      text-align: center;
+      font-size: .11rem;
+      background: #83b09a;
+      color: #ffffff;
+    }
+  }
+}
+//按钮
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #29bde0;
+  padding-bottom: .3rem;
+  button{
+    display: block;
+    margin: 0 auto;
+    height: .44rem;
+    width: 76.25%;
+    background: #fbb435;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: .2rem;
+  }
+}

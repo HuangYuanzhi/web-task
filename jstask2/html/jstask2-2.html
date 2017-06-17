@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <title>参数设置</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/jstask2-2.css">
+</head>
+<body>
+<!--页面头部开始-->
+<div class="header">
+    <a class="left-btn" href="jstask2-1.html">
+        <span>&#xf104</span>
+    </a>
+    <p>参数设置</p>
+    <a class="right-btn" href="#">
+        <span>&#xf29c</span>
+    </a>
+</div>
+<!--页面头部开始-->
+
+<div class="main">
+    <!--玩家配比-->
+    <div class="top">
+        <div class="top-left">
+            <div class="top-tt">玩家配比</div>
+        </div>
+        <div class="top-right">
+            <div class="top-show" id="showBoard"></div>
+            <div class="top-set">
+                <div id="clickSet">点击设置&nbsp;&nbsp;<span>&#xf058</span></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--设置词组-->
+    <div class="mid">
+        <div class="mid-wrapper">
+            <input type="text" placeholder="水民词组">
+            <input type="text" placeholder="幽灵词组">
+        </div>
+
+    </div>
+    <!--设置人数-->
+    <div class="btm">
+        <div class="btm-wrapper">
+            <form action="#">
+                <div>
+                    <label>玩家人数&nbsp;&nbsp;<input class="player-num" type="number" id="player-num" value="4">&nbsp;&nbsp;人</label>
+                </div>
+                <div class="slider">
+                    <div id="decrease">-</div>
+                    <input type="range" name="range" id="myRange" max="18" min="4" step="1" value="4">
+                    <div id="increase">+</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <button id="deal-cards">去发牌</button>
+</div>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+
+<script src="../js/jstask2-2.js"></script>
+</body>
+</html>

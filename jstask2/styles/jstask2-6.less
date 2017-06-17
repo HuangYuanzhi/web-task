@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+//重置样式及公共样式引入
+@import "../styles/jstask2-reset&base";
+
+//页面独有样式
+
+body {
+  background: #29bde0;
+}
+//头部
+.header{
+  border-bottom:1px solid #74d4eb;
+  a{
+    text-decoration: none;
+  }
+  .right-btn{
+    font-size: .3rem;
+    line-height: .4rem;
+  }
+}
+.main{
+  padding-top: .5rem;
+  padding-bottom: .8rem;
+  .main-top{
+    position: relative;
+    .tips{
+      padding-left: 6.0416%;
+      font-size: .13rem;
+      line-height: .4rem;
+      background: #b9e9f5;
+    }
+    .option{
+      padding-left: 6.0416%;
+      margin-top: .15rem;
+      margin-bottom: .15rem;
+      font-size: .12rem;
+      color: #ffffff;
+      line-height: .12rem;
+    }
+    .triangle{
+      position: absolute;
+      top: .4rem;
+      left: 6.0416%;
+      border-top: .15rem solid #b9e9f5;
+      border-left: .075rem solid transparent;
+      border-right: .075rem solid transparent;
+    }
+  }
+  .main-row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .role-box{
+    position: relative;
+    margin-left:6.6%;
+    margin-right:6.6%;
+    width: 20%;
+    padding-bottom: 10%;
+    &:hover .knife{
+      display: block;
+    }
+    .knife{
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%,0);
+      display: none;
+      width: 35%;
+      padding-top: 35%;
+      background: url("../images/knife.png") no-repeat center;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .role-wrapper{
+    position: relative;
+    padding-top: 95%;
+    background: #f5c97b;
+    border: .02rem solid #ffffff;
+    box-sizing: content-box;
+    text-align: center;
+
+    .role{
+      position: absolute;
+      top: 0;
+      height: 72%;
+      width: 100%;
+      text-align: center;
+      padding-top: 25%;
+      font-size: .15rem;
+    }
+    .number{
+      position: absolute;
+      bottom: 0;
+      height: 28%;
+      width: 100%;
+      text-align: center;
+      font-size: .11rem;
+      background: #83b09a;
+      color: #ffffff;
+    }
+  }
+  //.die{
+  //  background: #83b09a;
+  //}
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #29bde0;
+  padding-bottom: .3rem;
+  button{
+    display: block;
+    margin: 0 auto;
+    height: .44rem;
+    width: 76.25%;
+    background: #fbb435;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: .2rem;
+  }
+}
