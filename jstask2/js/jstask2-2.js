@@ -10,13 +10,20 @@ var myRange = document.getElementById('myRange');
 var role = document.getElementById('showBoard');
 var killer;
 var people;
+// 清空所有储存数据
+localStorage.clear();
+
 // 人数检验
-function numAlert() {
+function numAlert(words) {
     var a = player_num.value;
-    if(a < 4 || a > 18){
-        bootbox.alert("请输入正确的玩家数量");
+    if(a < 4){
+        bootbox.alert(words);
         player_num.value = 4;
         myRange.value = 4;
+    } else if(a > 18){
+        bootbox.alert(words);
+        player_num.value = 18;
+        myRange.value = 18;
     }else {
         myRange.value = a;
     }
@@ -24,39 +31,43 @@ function numAlert() {
 
 // 输入框动作
 player_num.onblur=function () {
-    numAlert();
+    numAlert("请输入正确的玩家数量：4~18");
 };
 player_num.onchange=function () {
     role.innerHTML="";
-    // 移除发牌点击事件
-    dealCards.onclick=null;
+    // 清除设置按钮状态
+    localStorage.removeItem("set");
+    localStorage.setItem("set",0);
 };
 
 // 滑块动作
 myRange.onchange=function () {
     player_num.value = myRange.value;
     role.innerHTML="";
-    // 移除发牌点击事件
-    dealCards.onclick=null;
+    // 清除设置按钮状态
+    localStorage.removeItem("set");
+    localStorage.setItem("set",0);
 };
 // 加减按钮动作
 decrease.onclick=function () {
     var a = player_num.value;
     a--;
     player_num.value = a;
-    numAlert();
+    numAlert("请设置玩家数量为4~18");
     role.innerHTML="";
-    // 移除发牌点击事件
-    dealCards.onclick=null;
+    // 清除设置按钮状态
+    localStorage.removeItem("set");
+    localStorage.setItem("set",0);
 };
 increase.onclick=function () {
     var a = player_num.value;
     a++;
     player_num.value = a;
-    numAlert();
+    numAlert("请设置玩家数量为4~18");
     role.innerHTML="";
-    // 移除发牌点击事件
-    dealCards.onclick=null;
+    // 清除设置按钮状态
+    localStorage.removeItem("set");
+    localStorage.setItem("set",0);
 };
 
 // 身份及人数展示
@@ -69,8 +80,9 @@ function showRole() {
 }
 // 点击设置动作
 clickSet.onclick=function () {
-    // 清空储存数据
-    localStorage.clear();
+    // 储存设置按钮是否点击的状态
+    localStorage.removeItem("set");
+    localStorage.setItem("set",1);
 
     var a = player_num.value;
     i = Number(a);
@@ -82,7 +94,6 @@ clickSet.onclick=function () {
         killer = 1;
         people = i-1;
         showRole();
-
     }
     else if(i <= 12){
         killer=2;
@@ -108,16 +119,21 @@ clickSet.onclick=function () {
     role.sort(function(aa,bb){ return Math.random()>.5 ? -1 : 1;});
     role = JSON.stringify(role);
     console.log(role);
-
     localStorage.setItem("roles",role);
-    // 添加发牌点击事件
-    dealCards.onclick=function () {
-        window.location.href="http://119.10.57.69:880/jnshu3937/jstask2/html/jstask2-3.html";
-    };
 };
+
+// 添加发牌点击事件
 dealCards.onclick=function () {
-    window.alert("请先设置人数");
+    var setStatus = JSON.parse(localStorage.getItem("set"));
+    if (setStatus === 1){
+        window.location.href="http://119.10.57.69:880/jnshu3937/jstask2/html/jstask2-3.html";
+    }else{
+        bootbox.alert("请先设置人数");
+    }
 };
+
+
+
 
 
 

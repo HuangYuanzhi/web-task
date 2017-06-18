@@ -10,6 +10,9 @@ a{
 
 html{
   font-size: 625%;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 body{
   font-size: .12rem;
@@ -28,6 +31,15 @@ body{
   font-weight: normal;
   font-style: normal;
 }
+//模态框样式调整
+body{
+  padding-right: 0 !important;
+  //.modal-open {
+  //  overflow-y: auto !important;
+  //  padding-right: 0 !important;
+  //}
+}
+
 //页面顶部开始
 @header-c: #29bde0;
 @header-h: .44rem;
@@ -39,6 +51,9 @@ body{
   display: flex;
   background: @header-c;
   height: @header-h;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
   a{
     display: block;
     padding: 0 .1rem;
@@ -61,6 +76,7 @@ body{
   p{
     width: 100%;
     font-size: .17rem;
+    line-height: .45rem;
     line-height: @header-h;
     color: #fff;
     text-align: center;

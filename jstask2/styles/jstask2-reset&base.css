@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*reset 开始*/
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 625%;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body {
+  font-size: .12rem;
+}
+/*reset 结束*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-font {
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  padding-right: 0 !important;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  background: #29bde0;
+  height: 0.44rem;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.header a {
+  display: block;
+  padding: 0 .1rem;
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  font-size: .2rem;
+  line-height: 0.44rem;
+}
+.header .left-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .right-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header p {
+  width: 100%;
+  font-size: .17rem;
+  line-height: .45rem;
+  line-height: 0.44rem;
+  color: #fff;
+  text-align: center;
+}

@@ -11,6 +11,9 @@ a {
 }
 html {
   font-size: 625%;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 body {
   font-size: .12rem;
@@ -27,6 +30,9 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+body {
+  padding-right: 0 !important;
+}
 .header {
   position: fixed;
   left: 0;
@@ -35,6 +41,9 @@ body {
   display: flex;
   background: #29bde0;
   height: 0.44rem;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 .header a {
   display: block;
@@ -59,6 +68,7 @@ body {
 .header p {
   width: 100%;
   font-size: .17rem;
+  line-height: .45rem;
   line-height: 0.44rem;
   color: #fff;
   text-align: center;
@@ -163,6 +173,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  max-width: 425px;
+  min-width: 320px;
+  margin: 0 auto;
   background: #29bde0;
   padding-bottom: .3rem;
 }
